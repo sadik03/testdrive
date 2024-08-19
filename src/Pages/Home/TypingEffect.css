@@ -95,7 +95,7 @@
 
 @media (max-width: 320px) {
   .text-ars {
-    font-size: 15vw; /* Extra-large font size for very small screens */
+    font-size: 12vw; /* Extra-large font size for very small screens */
   }
 }
 

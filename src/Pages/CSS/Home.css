@@ -1,5 +1,8 @@
 /* Home.css */
 
+
+
+
 .home-page {
   display: flex;
   justify-content: center;
@@ -23,7 +26,7 @@
   z-index: 2;
   width: 100%;
   max-width: 1200px;
-  padding: 20px 20px; /* Equal padding on left and right */
+  padding: 20px;
   margin-top: 60px;
 }
 
@@ -39,7 +42,9 @@
   text-align: left;
 }
 
-.Trainer {
+
+
+.Trainer{
   margin-top: 160px;
 }
 
@@ -77,7 +82,7 @@
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 10px 10px; /* Adjusted padding for small screens */
+    padding: 10px;
   }
 
   .grid {
