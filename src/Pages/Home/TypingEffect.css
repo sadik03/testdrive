@@ -1,0 +1,143 @@
+.container {
+  text-align: left;
+  padding: 20px;
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.text-title {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  white-space: nowrap; /* Ensures the text stays on one line */
+  overflow: hidden; 
+  border-right: 0.15em solid orange; /* Typewriter cursor effect */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 2.5rem; /* Adjusted for responsiveness */
+}
+
+.admission-text {
+  font-size: 1.5rem;
+  font-family: "Permanent Marker", cursive;
+  margin: 20px 0;
+  background-color: #d35400;
+  padding: 20px;
+  width: 21rem;
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.container span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f39c12;
+  display: inline-block;
+  font-family: "Permanent Marker", cursive;
+  animation: pulse 2s infinite;
+}
+
+.container p {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Sirin Stencil", sans-serif;
+}
+
+.btn-text {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Permanent Marker", cursive;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-text:hover {
+  background-color: #d35400;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  .text-title {
+    font-size: 2rem;
+  }
+
+  .admission-text {
+    font-size: 1.3rem;
+    width: 18rem;
+  }
+
+  .container span {
+    font-size: 1.5rem;
+  }
+
+  .btn-text {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .text-ars {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-title {
+    font-size: 1.5rem;
+  }
+
+  .admission-text {
+    font-size: 1.1rem;
+    width: 16rem;
+    padding: 15px;
+  }
+
+  .container span {
+    font-size: 1.3rem;
+  }
+
+  .btn-text {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+
+  .text-ars {
+    font-size: 50px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.text-ars {
+  font-family: "Permanent Marker", cursive;
+  font-size: 75px;
+}

@@ -1,0 +1,77 @@
+.membership-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+.membership-info {
+  flex: 1;
+
+  padding: 20px;
+}
+
+.membership-title {
+  margin-top: 90px;
+  font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
+  color: #ff8000;
+  margin-bottom: 20px;
+}
+
+.membership-animation {
+  margin-bottom: 20px;
+}
+
+.membership-description {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.payment-form {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5rem;
+  color: #ff8000;
+  margin-bottom: 20px;
+}
+
+.payment-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form label {
+  margin-bottom: 8px;
+}
+
+.payment-form input {
+  margin-bottom: 20px;
+  font-family: "Titillium Web", sans-serif;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #ff8000;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e67e22;
+}
