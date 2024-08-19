@@ -23,7 +23,8 @@
   margin: 20px 0;
   background-color: #d35400;
   padding: 20px;
-  width: 21rem;
+  width: 100%; /* Responsive width */
+  max-width: 21rem; /* Keeps it from getting too wide */
   border-radius: 50px;
   text-align: center;
   animation: fadeInUp 1.5s ease-in-out;

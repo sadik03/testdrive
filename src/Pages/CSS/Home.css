@@ -7,6 +7,7 @@
   overflow-x: hidden;
   text-align: center;
   min-height: 100vh; /* Ensures the page covers full viewport height */
+  padding: 20px; /* Adds some padding for smaller screens */
 }
 
 .hero-overlay {
@@ -50,6 +51,8 @@
 }
 
 /* Responsive adjustments */
+
+/* For medium-sized screens, like tablets and smaller laptops */
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: 1fr; /* Stack columns on top of each other */
@@ -61,6 +64,7 @@
   }
 }
 
+/* For smaller screens like large mobile devices */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr; /* Stack columns */
@@ -82,13 +86,19 @@
   }
 }
 
+/* For small mobile devices (portrait phones) */
 @media (max-width: 480px) {
   .hero-content {
     padding: 10px; /* Less padding for smaller screens */
   }
 
   .grid {
-    gap: 10px;
+    gap: 10px; /* Tighten gap between grid items */
+  }
+
+  .typing-effect-container,
+  .image-slide-container {
+    margin-bottom: 15px; /* Additional margin for mobile */
   }
 
   .Trainer {
@@ -96,17 +106,22 @@
   }
 }
 
-/* Very small screen adjustments */
+/* For very small screens (older phones) */
 @media (max-width: 320px) {
   .hero-content {
-    padding: 5px; /* Minimized padding for very small devices */
+    padding: 5px; /* Minimal padding for very small devices */
   }
 
   .grid {
     gap: 5px; /* Minimal gap between grid items */
   }
 
+  .typing-effect-container,
+  .image-slide-container {
+    margin-bottom: 10px; /* Tighter margins for very small screens */
+  }
+
   .Trainer {
-    margin-top: 40px; /* Reduced margin for very small screens */
+    margin-top: 40px; /* Further reduced margin for small screens */
   }
 }
