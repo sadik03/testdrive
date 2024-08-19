@@ -1,59 +1,97 @@
 .container {
   text-align: left;
-  padding: 20px; /* Default padding for larger screens */
+  padding: 20px;
   color: white;
-  max-width: 100%; /* Make sure container is fluid on large screens */
+  max-width: 100%; /* Ensure full width on large screens */
   margin: auto;
   animation: fadeIn 2s ease-in-out;
-  box-sizing: border-box; /* Ensure padding is included in width calculations */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Images should be fully responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive grid setup for content and images */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .container {
-    max-width: 95%; /* Slightly reduce width for larger tablets and small desktops */
-    padding: 18px; /* Reduce padding */
+    max-width: 95%;
+    padding: 18px;
   }
 }
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 90%; /* Reduce width for tablets */
+    max-width: 90%;
     padding: 16px;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 85%; /* Reduce width further for medium-sized tablets */
+    max-width: 85%;
     padding: 14px;
-    text-align: center; /* Center text for better mobile alignment */
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    max-width: 80%; /* Narrow width for mobile devices */
-    padding: 12px; /* Reduce padding for smaller mobile devices */
+    max-width: 95%;
+    padding: 10px;
+    text-align: center;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 95%; /* Maximize width for very small screens */
-    padding: 8px; /* Minimum padding for very small screens */
+    max-width: 100%;
+    padding: 5px;
+    text-align: center;
   }
 }
-
 
 .text-title {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
-  white-space: nowrap; /* Ensures the text stays on one line */
-  overflow: hidden; 
+  white-space: nowrap;
+  overflow: hidden;
   border-right: 0.15em solid orange; /* Typewriter cursor effect */
   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   font-size: 2.5rem; /* Adjusted for responsiveness */
+}
+
+/* Responsive adjustments for .text-title */
+@media (max-width: 768px) {
+  .text-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-title {
+    font-size: 1.2rem;
+  }
 }
 
 .admission-text {
@@ -62,10 +100,34 @@
   margin: 20px 0;
   background-color: #d35400;
   padding: 20px;
-  width: 21rem;
+  width: 100%;
+  max-width: 21rem;
   border-radius: 50px;
   text-align: center;
   animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Responsive adjustments for .admission-text */
+@media (max-width: 768px) {
+  .admission-text {
+    font-size: 1.3rem;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-text {
+    font-size: 1.1rem;
+    width: 100%; /* Full width for small screens */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .admission-text {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
 
 .container span {
@@ -75,6 +137,25 @@
   display: inline-block;
   font-family: "Permanent Marker", cursive;
   animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments for span */
+@media (max-width: 768px) {
+  .container span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container span {
+    font-size: 1rem;
+  }
 }
 
 .container p {
@@ -100,53 +181,49 @@
   background-color: #d35400;
 }
 
-/* Responsive text adjustments */
+/* Responsive adjustments for .btn-text */
 @media (max-width: 768px) {
-  .text-title {
-    font-size: 2rem;
-  }
-
-  .admission-text {
-    font-size: 1.3rem;
-    width: 18rem;
-  }
-
-  .container span {
-    font-size: 1.5rem;
-  }
-
   .btn-text {
     font-size: 0.9rem;
     padding: 8px 16px;
   }
+}
 
+@media (max-width: 480px) {
+  .btn-text {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-text {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+  }
+}
+
+.text-ars {
+  font-family: "Permanent Marker", cursive;
+  font-size: 75px;
+}
+
+/* Responsive adjustments for .text-ars */
+@media (max-width: 768px) {
   .text-ars {
     font-size: 60px;
   }
 }
 
 @media (max-width: 480px) {
-  .text-title {
-    font-size: 1.5rem;
-  }
-
-  .admission-text {
-    font-size: 1.1rem;
-    width: 16rem;
-    padding: 15px;
-  }
-
-  .container span {
-    font-size: 1.3rem;
-  }
-
-  .btn-text {
-    font-size: 0.8rem;
-    padding: 7px 14px;
-  }
-
   .text-ars {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-ars {
+    font-size: 40px;
   }
 }
 
@@ -174,9 +251,4 @@
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
-}
-
-.text-ars {
-  font-family: "Permanent Marker", cursive;
-  font-size: 75px;
 }
