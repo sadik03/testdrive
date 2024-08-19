@@ -203,5 +203,32 @@
 
 .text-ars {
   font-family: "Permanent Marker", cursive;
-  font-size: 75px;
+  font-size: 6vw; /* Fluid typography based on viewport width */
+  line-height: 1.2; /* Ensures good spacing between lines */
+  margin: 10px 0;
+}
+
+/* Specific adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .text-ars {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-ars {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-ars {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-ars {
+    font-size: 8vw;
+  }
 }
