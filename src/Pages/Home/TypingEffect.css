@@ -62,8 +62,7 @@
   margin: 20px 0;
   background-color: #d35400;
   padding: 20px;
-  width: 100%; /* Responsive width */
-  max-width: 21rem; /* Keeps it from getting too wide */
+  width: 21rem;
   border-radius: 50px;
   text-align: center;
   animation: fadeInUp 1.5s ease-in-out;
@@ -101,60 +100,53 @@
   background-color: #d35400;
 }
 
-/* Centering .text-ars */
-.text-ars-container {
-  text-align: center; /* Center text horizontally */
-  margin: 0 auto; /* Center container horizontally */
-}
-
-.text-ars {
-  font-family: "Permanent Marker", cursive;
-  font-size: 5vw; /* Base size relative to viewport width */
-  display: inline-block; /* Ensure it respects text alignment of parent */
-  line-height: 1.1; /* Adjust line-height for better vertical spacing */
-}
-
 /* Responsive text adjustments */
-@media (max-width: 1024px) {
-  .text-ars {
-    font-size: 6vw; /* Adjusted for larger tablets */
-  }
-}
-
 @media (max-width: 768px) {
+  .text-title {
+    font-size: 2rem;
+  }
+
+  .admission-text {
+    font-size: 1.3rem;
+    width: 18rem;
+  }
+
+  .container span {
+    font-size: 1.5rem;
+  }
+
+  .btn-text {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
   .text-ars {
-    font-size: 8vw; /* Larger font size for tablets */
+    font-size: 60px;
   }
 }
 
 @media (max-width: 480px) {
+  .text-title {
+    font-size: 1.5rem;
+  }
+
+  .admission-text {
+    font-size: 1.1rem;
+    width: 16rem;
+    padding: 15px;
+  }
+
+  .container span {
+    font-size: 1.3rem;
+  }
+
+  .btn-text {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+
   .text-ars {
-    font-size: 12vw; /* Larger font size for mobile devices */
-  }
-}
-
-@media (max-width: 320px) {
-  .text-ars {
-    font-size: 12vw; /* Extra-large font size for very small screens */
-  }
-}
-
-/* Responsive padding adjustments */
-@media (max-width: 768px) {
-  .container {
-    padding: 15px; /* Reduced padding for tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 10px; /* Further reduced padding for mobile devices */
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    padding: 5px; /* Minimum padding for very small screens */
+    font-size: 50px;
   }
 }
 
@@ -182,4 +174,9 @@
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
+}
+
+.text-ars {
+  font-family: "Permanent Marker", cursive;
+  font-size: 75px;
 }

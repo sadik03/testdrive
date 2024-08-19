@@ -1,13 +1,14 @@
 /* Home.css */
 
+
+
+
 .home-page {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   text-align: center;
-  min-height: 100vh; /* Ensures the page covers full viewport height */
-  padding: 20px; /* Adds some padding for smaller screens */
 }
 
 .hero-overlay {
@@ -27,7 +28,6 @@
   max-width: 1200px;
   padding: 20px;
   margin-top: 60px;
-  text-align: center; /* Center content in mobile views */
 }
 
 .grid {
@@ -42,7 +42,9 @@
   text-align: left;
 }
 
-.Trainer {
+
+
+.Trainer{
   margin-top: 160px;
 }
 
@@ -51,27 +53,23 @@
 }
 
 /* Responsive adjustments */
-
-/* For medium-sized screens, like tablets and smaller laptops */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: 1fr; /* Stack columns on top of each other */
+    grid-template-columns: 1fr;
   }
 
-  .typing-effect-container,
+  .typing-effect-container, 
   .image-slide-container {
-    text-align: center; /* Center text for tablet and smaller */
+    text-align: center;
   }
 }
 
-/* For smaller screens like large mobile devices */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* Stack columns */
-    gap: 15px; /* Adjust gap for smaller screens */
+    grid-template-columns: 1fr;
   }
 
-  .typing-effect-container,
+  .typing-effect-container, 
   .image-slide-container {
     text-align: center;
     margin-bottom: 20px;
@@ -80,48 +78,14 @@
   .image-slide-container {
     margin-bottom: 0;
   }
-
-  .Trainer {
-    margin-top: 80px; /* Reduced margin for smaller screens */
-  }
 }
 
-/* For small mobile devices (portrait phones) */
 @media (max-width: 480px) {
   .hero-content {
-    padding: 10px; /* Less padding for smaller screens */
+    padding: 10px;
   }
 
   .grid {
-    gap: 10px; /* Tighten gap between grid items */
-  }
-
-  .typing-effect-container,
-  .image-slide-container {
-    margin-bottom: 15px; /* Additional margin for mobile */
-  }
-
-  .Trainer {
-    margin-top: 60px; /* Further reduced margin for very small screens */
-  }
-}
-
-/* For very small screens (older phones) */
-@media (max-width: 320px) {
-  .hero-content {
-    padding: 5px; /* Minimal padding for very small devices */
-  }
-
-  .grid {
-    gap: 5px; /* Minimal gap between grid items */
-  }
-
-  .typing-effect-container,
-  .image-slide-container {
-    margin-bottom: 10px; /* Tighter margins for very small screens */
-  }
-
-  .Trainer {
-    margin-top: 40px; /* Further reduced margin for small screens */
+    gap: 10px;
   }
 }
