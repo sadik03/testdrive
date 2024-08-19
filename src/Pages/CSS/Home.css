@@ -1,8 +1,5 @@
 /* Home.css */
 
-
-
-
 .home-page {
   display: flex;
   justify-content: center;
@@ -42,9 +39,7 @@
   text-align: left;
 }
 
-
-
-.Trainer{
+.Trainer {
   margin-top: 160px;
 }
 
