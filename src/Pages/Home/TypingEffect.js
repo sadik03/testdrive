@@ -20,9 +20,9 @@ const TypingEffect = () => {
 
     return (
       <div className="container">
-        <h1 className="text-ars">
+        <h2 className="text-ars">
            ARS KREEDASHALA
-        </h1>
+        </h2>
      
 
           <button className="admission-text" onClick={handleLearnMoreClick}>   Admission Going On</button>
@@ -32,7 +32,7 @@ const TypingEffect = () => {
           <span>{texts}</span>
           <Cursor cursorStyle="." cursorColor="orange" />
         </div>
-        <p className="txt-para">
+        <p className="">
           We provide individualized academic support and flexible,
           permeable educational pathways that are tailored to each student's needs.
           your particular requirements and goals. Since our ambitions coincide with yours.
