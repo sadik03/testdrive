@@ -131,7 +131,7 @@ p {
 
 @media (max-width: 480px) { /* Extra small phones */
   .text-ars {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .admission-text {
