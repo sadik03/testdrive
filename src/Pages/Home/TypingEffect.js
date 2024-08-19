@@ -32,7 +32,7 @@ const TypingEffect = () => {
           <span>{texts}</span>
           <Cursor cursorStyle="." cursorColor="orange" />
         </div>
-        <p className="">
+        <p className="btn-para">
           We provide individualized academic support and flexible,
           permeable educational pathways that are tailored to each student's needs.
           your particular requirements and goals. Since our ambitions coincide with yours.
