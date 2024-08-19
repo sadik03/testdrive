@@ -6,7 +6,6 @@
   align-items: center;
   overflow-x: hidden;
   text-align: center;
-  padding: 20px; /* Add padding for small devices */
 }
 
 .hero-overlay {
@@ -24,9 +23,8 @@
   z-index: 2;
   width: 100%;
   max-width: 1200px;
-  padding: 20px;
+  padding: 20px 20px; /* Equal padding on left and right */
   margin-top: 60px;
-  box-sizing: border-box;
 }
 
 .grid {
@@ -39,21 +37,14 @@
 
 .typing-effect-container {
   text-align: left;
-  font-size: 2vw; /* Use viewport width for text scaling */
 }
 
 .Trainer {
-  margin-top: 10vw; /* Adjust margins based on viewport width */
+  margin-top: 160px;
 }
 
 .image-slide-container {
   text-align: right;
-}
-
-/* Image slide container: Ensure that images are responsive */
-.image-slide-container img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Responsive adjustments */
@@ -66,11 +57,6 @@
   .image-slide-container {
     text-align: center;
   }
-
-  .hero-content {
-    margin-top: 40px;
-    padding: 15px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -78,7 +64,7 @@
     grid-template-columns: 1fr;
   }
 
-  .typing-effect-container,
+  .typing-effect-container, 
   .image-slide-container {
     text-align: center;
     margin-bottom: 20px;
@@ -87,30 +73,14 @@
   .image-slide-container {
     margin-bottom: 0;
   }
-
-  .hero-content {
-    margin-top: 30px;
-  }
-
-  .typing-effect-container {
-    font-size: 4vw; /* Further reduce font size */
-  }
 }
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 10px;
+    padding: 10px 10px; /* Adjusted padding for small screens */
   }
 
   .grid {
     gap: 10px;
-  }
-
-  .typing-effect-container {
-    font-size: 5vw; /* Even smaller font size for tiny screens */
-  }
-
-  .Trainer {
-    margin-top: 100px;
   }
 }
