@@ -1,11 +1,50 @@
 .container {
-  text-align: center;
+  text-align: left;
   padding: 20px; /* Default padding for larger screens */
   color: white;
-  max-width: 600px;
+  max-width: 100%; /* Make sure container is fluid on large screens */
   margin: auto;
   animation: fadeIn 2s ease-in-out;
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%; /* Slightly reduce width for larger tablets and small desktops */
+    padding: 18px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%; /* Reduce width for tablets */
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 85%; /* Reduce width further for medium-sized tablets */
+    padding: 14px;
+    text-align: center; /* Center text for better mobile alignment */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 80%; /* Narrow width for mobile devices */
+    padding: 12px; /* Reduce padding for smaller mobile devices */
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 95%; /* Maximize width for very small screens */
+    padding: 8px; /* Minimum padding for very small screens */
+  }
+}
+
 
 .text-title {
   font-family: "Permanent Marker", cursive;
