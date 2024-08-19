@@ -41,12 +41,9 @@
 .container p {
   margin: 20px 0;
   padding-right: 30%;
-  /* font-size: 1rem; */
   line-height: 1.6;
   font-family: "Sirin Stencil", sans-serif;
 }
-
-
 
 .btn-text {
   background-color: #d35400;
@@ -65,13 +62,37 @@
 }
 
 /* Responsive text adjustments */
+@media (max-width: 1280px) { /* Large desktops */
+  .text-title {
+    font-size: 2.4rem;
+  }
+
+  .admission-text {
+    font-size: 1.4rem;
+    width: 20rem;
+  }
+
+  .container span {
+    font-size: 1.7rem;
+  }
+
+  .btn-text {
+    font-size: 0.95rem;
+    padding: 9px 18px;
+  }
+
+  .text-ars {
+    font-size: 70px;
+  }
+}
+
 @media (max-width: 1024px) { /* Tablets in landscape mode */
   .text-title {
     font-size: 2.2rem;
   }
 
   .admission-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     width: 19rem;
   }
 
@@ -80,8 +101,8 @@
   }
 
   .btn-text {
-    font-size: 0.95rem;
-    padding: 9px 18px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 
   .text-ars {
@@ -95,31 +116,28 @@
   }
 
   .admission-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 18rem;
   }
 
   .container span {
     font-size: 1.5rem;
-    
   }
 
   .btn-text {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    font-size: 0.85rem;
+    padding: 7px 14px;
   }
 
   .text-ars {
-    font-size: 45px;
-    text-align: left;
-    
-    
+    font-size: 55px;
+    text-align: center; /* Center text for better visibility */
   }
 }
 
-@media (max-width: 480px) { /* Mobile phones */
+@media (max-width: 576px) { /* Small phones */
   .text-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .admission-text {
@@ -129,16 +147,43 @@
   }
 
   .container span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .btn-text {
     font-size: 0.8rem;
-    padding: 7px 14px;
+    padding: 6px 12px;
   }
 
   .text-ars {
-    font-size: 60px;
+    font-size: 50px;
+    text-align: center; /* Center text for better visibility */
+  }
+}
+
+@media (max-width: 480px) { /* Extra small phones */
+  .text-title {
+    font-size: 1.5rem;
+  }
+
+  .admission-text {
+    font-size: 1rem;
+    width: 14rem;
+    padding: 10px;
+  }
+
+  .container span {
+    font-size: 1.3rem;
+  }
+
+  .btn-text {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .text-ars {
+    font-size: 40px;
+    text-align: center; /* Center text for better visibility */
   }
 }
 
@@ -170,7 +215,7 @@
 
 .text-ars {
   font-family: "Permanent Marker", cursive;
-  /* font-size: 75px; */
-  /* text-align: center;  */
-  margin: 0 auto; 
+  font-size: 75px; /* Default size for larger screens */
+  text-align: center; /* Center text by default */
+  margin: 0 auto; /* Center text container */
 }
