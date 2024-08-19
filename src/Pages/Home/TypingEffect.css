@@ -106,6 +106,7 @@ p {
 @media (max-width: 576px) { /* Small phones */
   .text-ars {
     font-size: 1.5rem;
+    text-align: left;
   }
 
   .admission-text {
