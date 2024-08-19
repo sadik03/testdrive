@@ -21,7 +21,7 @@ const TypingEffect = () => {
     return (
       <div className="container">
         <h2 className="text-ars">
-           ARS KREEDASHALA
+           AR KREEDASHALA
         </h2>
      
 

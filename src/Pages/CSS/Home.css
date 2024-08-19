@@ -1,14 +1,12 @@
 /* Home.css */
 
-
-
-
 .home-page {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   text-align: center;
+  min-height: 100vh; /* Ensures the page covers full viewport height */
 }
 
 .hero-overlay {
@@ -28,6 +26,7 @@
   max-width: 1200px;
   padding: 20px;
   margin-top: 60px;
+  text-align: center; /* Center content in mobile views */
 }
 
 .grid {
@@ -42,9 +41,7 @@
   text-align: left;
 }
 
-
-
-.Trainer{
+.Trainer {
   margin-top: 160px;
 }
 
@@ -55,21 +52,22 @@
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack columns on top of each other */
   }
 
-  .typing-effect-container, 
+  .typing-effect-container,
   .image-slide-container {
-    text-align: center;
+    text-align: center; /* Center text for tablet and smaller */
   }
 }
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack columns */
+    gap: 15px; /* Adjust gap for smaller screens */
   }
 
-  .typing-effect-container, 
+  .typing-effect-container,
   .image-slide-container {
     text-align: center;
     margin-bottom: 20px;
@@ -78,14 +76,37 @@
   .image-slide-container {
     margin-bottom: 0;
   }
+
+  .Trainer {
+    margin-top: 80px; /* Reduced margin for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 10px;
+    padding: 10px; /* Less padding for smaller screens */
   }
 
   .grid {
     gap: 10px;
+  }
+
+  .Trainer {
+    margin-top: 60px; /* Further reduced margin for very small screens */
+  }
+}
+
+/* Very small screen adjustments */
+@media (max-width: 320px) {
+  .hero-content {
+    padding: 5px; /* Minimized padding for very small devices */
+  }
+
+  .grid {
+    gap: 5px; /* Minimal gap between grid items */
+  }
+
+  .Trainer {
+    margin-top: 40px; /* Reduced margin for very small screens */
   }
 }
