@@ -6,6 +6,13 @@
   align-items: center;
 
 }
+.navbar {
+  background: #fff; /* Set a solid background color or any desired color */
+  background-image: none; /* Remove any background image */
+  background-size: cover; /* Ensure background image size property is reset */
+  background-position: center; /* Center the background if needed */
+  /* border-bottom: 1px solid #ddd; Optional: Add a border for separation */
+}
 
 .main {
   background: rgba(255, 255, 255, 0.377); /* Add some transparency to the background */
