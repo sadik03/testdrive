@@ -10,7 +10,8 @@ import Lottie from 'lottie-react';
 import aboutAnimation from '../LottieAnimation/about.json';
 import Loader from './Loader'; // Import the Loader component
 import './CSS/About.css';
-import BackgroundImage from "../assets/bn6.jpg"; // Import the background image
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const About = () => {
   const navigate = useNavigate();
@@ -20,35 +21,12 @@ const About = () => {
   };
 
   return (
-    <div 
-      className="about-page"
-      style={{
-        position: 'relative',
-        minHeight: '100vh',
-        overflow: 'hidden',
-      }}
-    >
+    <div className="about-page">
       {/* Blurred background image */}
-      <div
-        className="blurred-background"
-        style={{
-          backgroundImage: `url(${BackgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          filter: 'blur(8px)',
-          position: 'absolute',
-          backgroundAttachment: 'fixed', 
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          zIndex: -1,
-        }}
-      ></div>
+      <div className="blurred-background"></div>
 
       <div className="about-container">
-        {/* about section */}
+        {/* About section */}
         <div className="about-section">
           <motion.div
             variants={fadeIn("left", 0.3)}
@@ -74,15 +52,15 @@ const About = () => {
               About ARS Kreedashala Pvt Ltd
             </h2>
             <p className="about-description">
-              ARS Kreedashala Pvt Ltd is an Indian sports education organization founded by sports enthusiasts with a shared vision: integrating sports into every child's education. They have built a structured Sports and Physical Education (P.E) curriculum based on the recognized NASPE Standards (National Association for Sports & Physical Education). This curriculum aims to develop a healthier and fitter generation through high-quality sports education.
+              ARS Kreedashala Pvt Ltd is an Indian sports education organization founded by sports enthusiasts with a shared vision: integrating sports into every child's education. We offer a structured Sports and Physical Education (P.E) curriculum based on NASPE Standards, aiming to develop a healthier and fitter generation through high-quality sports education.
               <br /><br />
-              Our mission is to provide every grassroots player with the opportunity to enhance their skills in the early stages of their sports career. We have identified a gap in the market where basic skill development and static training are not being addressed by sports schools or academies. Our solution is to offer personalized training with the help of IT support to ensure every athlete reaches their full potential. Our ultimate goal is to create a significant impact in the sports industry by winning the maximum number of medals in the Olympic Games.
+              Our mission is to provide every grassroots player with the opportunity to enhance their skills from an early stage. We address the gap in basic skill development and static training with personalized training supported by IT. Our goal is to make a significant impact on the sports industry and win the maximum number of medals in the Olympic Games.
             </p>
             <button className="btn-success" onClick={handleLearnMore}>Learn More</button>
           </motion.div>
         </div>
 
-        {/* founder images */}
+        {/* Founders images */}
         <div className="founders-section">
           <h2 className="founders-title">
             Our Founders
@@ -130,7 +108,84 @@ const About = () => {
           </div>
         </div>
 
-        {/* company stats */}
+        {/* Sports Achievements */}
+        <div className="achievements-section">
+          <h2 className="achievements-title">
+            Our Achievements
+          </h2>
+          <div className="achievements-list">
+            <div className="achievement-item">
+              <img src="/src/assets/icons/gold-medal.png" alt="Gold Medal" className="achievement-icon" />
+              <h4 className="achievement-title">Olympic Gold Medals</h4>
+              <p>20+</p>
+            </div>
+            <div className="achievement-item">
+              <img src="/src/assets/icons/trophy.png" alt="Trophies" className="achievement-icon" />
+              <h4 className="achievement-title">National Trophies</h4>
+              <p>50+</p>
+            </div>
+            <div className="achievement-item">
+              <img src="/src/assets/icons/award.png" alt="Awards" className="achievement-icon" />
+              <h4 className="achievement-title">International Awards</h4>
+              <p>15+</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonials */}
+        <div className="testimonials-section">
+          <h2 className="testimonials-title">
+            What Our Athletes Say
+          </h2>
+          <div className="testimonials">
+            <div className="testimonial-item">
+              <img src="/src/assets/athlete1.jpg" alt="Athlete 1" className="testimonial-img" />
+              <p className="testimonial-text">
+                "ARS Kreedashala provided me with the perfect platform to enhance my skills and reach my full potential. Their support and guidance were instrumental in my success."
+              </p>
+              <p className="testimonial-author">- Athlete 1</p>
+            </div>
+            <div className="testimonial-item">
+              <img src="/src/assets/athlete2.jpg" alt="Athlete 2" className="testimonial-img" />
+              <p className="testimonial-text">
+                "The training programs and personalized coaching have helped me excel in my sport. I am grateful for the opportunities provided by ARS Kreedashala."
+              </p>
+              <p className="testimonial-author">- Athlete 2</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Milestones Timeline */}
+        <div className="milestones-section">
+          <h2 className="milestones-title">
+            Our Milestones
+          </h2>
+          <div className="milestones-timeline">
+            <div className="milestone-item">
+              <div className="milestone-date">2020</div>
+              <div className="milestone-content">
+                <h4>Established ARS Kreedashala</h4>
+                <p>Launched our first sports education program and started offering training sessions.</p>
+              </div>
+            </div>
+            <div className="milestone-item">
+              <div className="milestone-date">2021</div>
+              <div className="milestone-content">
+                <h4>Opened New Training Facilities</h4>
+                <p>Expanded our reach by opening new training centers across the country.</p>
+              </div>
+            </div>
+            <div className="milestone-item">
+              <div className="milestone-date">2022</div>
+              <div className="milestone-content">
+                <h4>National Recognition</h4>
+                <p>Received awards for excellence in sports education and training.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Company Stats */}
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -146,7 +201,7 @@ const About = () => {
               <p>We reached here with our hard work and dedication</p>
             </div>
 
-            {/* stats */}
+            {/* Stats */}
             <div className="stats-details">
               <div className="stats-item">
                 <div className="stats-icon">
@@ -162,31 +217,40 @@ const About = () => {
                   <img src="/src/assets/icons/clubs.png" alt="Clubs" />
                 </div>
                 <div className="stats-info">
-                  <h4 className="stats-number">46,328</h4>
+                  <h4 className="stats-number">1,415</h4>
                   <p>Clubs</p>
                 </div>
               </div>
               <div className="stats-item">
                 <div className="stats-icon">
-                  <img src="/src/assets/icons/click.png" alt="Event Bookings" />
+                  <img src="/src/assets/icons/medal.png" alt="Awards" />
                 </div>
                 <div className="stats-info">
-                  <h4 className="stats-number">828,867</h4>
-                  <p>Event Bookings</p>
-                </div>
-              </div>
-              <div className="stats-item">
-                <div className="stats-icon">
-                  <img src="/src/assets/icons/payments.png" alt="Payments" />
-                </div>
-                <div className="stats-info">
-                  <h4 className="stats-number">1,926,436</h4>
-                  <p>Payments</p>
+                  <h4 className="stats-number">34</h4>
+                  <p>Awards</p>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
+
+        {/* Contact Section */}
+        <div className="contact-section">
+          <h2 className="contact-title">
+            Get in Touch
+          </h2>
+          <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "400px", width: "100%" }}>
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker position={[51.505, -0.09]}>
+              <Popup>
+                Our headquarters.
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
       </div>
     </div>
   );

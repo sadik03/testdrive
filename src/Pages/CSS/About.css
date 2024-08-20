@@ -1,26 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Reggae+One&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-
+/* General body styles */
 body {
   margin: 0;
-
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
+/* Styling for about-page */
+.about-page {
+  padding-top: 70px;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Blurred background */
+.blurred-background {
+ 
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* About container styles */
 .about-container {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* About section styles */
 .about-section {
-  margin-top: 90px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .about-image {
@@ -30,87 +57,189 @@ body {
 
 .about-img {
   width: 100%;
-
-  margin-top: 90px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
   flex: 1;
-  padding: 0 2rem;
-  min-width: 300px; /* Ensure a minimum width for text */
+  padding: 1rem 2rem;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
 }
 
 .about-title {
-  font-size: 2rem;
-  font-family: "Rock Salt", cursive;
-  color: green;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
   margin-bottom: 1rem;
 }
 
 .about-description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  color: black;
   text-align: justify;
-  font-family: "Reggae One", system-ui;
-  background-color: #ffffff73;
-  padding: 20px;
 }
 
-.btn-primary {
-  background-color: #007bff;
+.btn-primary, .btn-success {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background-color: #3498db;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-
-.btn-success{
-  font-family: "Sirin Stencil", sans-serif;
-  font-size: 12px;
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.btn-primary:hover, .btn-success:hover {
+  background-color: #2980b9;
 }
+
+/* Founders section */
 .founders-section {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .founders-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: "Reggae One", system-ui;
-  color: green;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
 }
 
 .founders-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .founder-image {
   flex: 1;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .founder-img {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.founder-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievements section */
+.achievements-section {
+  margin-top: 3rem;
+}
+
+.achievements-title {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
+
+.achievements-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.achievement-title {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  margin-top: 3rem;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+/* Milestones section */
+.milestones-section {
+  margin-top: 3rem;
+}
+
+.milestones-title {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
+
+.milestones-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.milestone-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.milestone-date {
+  font-weight: bold;
+}
+
+.milestone-content {
+  flex: 1;
+}
+
+/* Stats section */
 .stats-section {
   background-color: #f5f7fa;
   padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
 }
 
 .stats-content {
@@ -125,29 +254,36 @@ body {
 
 .stats-title {
   font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
 }
 
 .stats-highlight {
-  color: #007bff;
+  color: #3498db;
 }
 
 .stats-details {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .stats-item {
   display: flex;
   align-items: center;
   flex: 1;
-  min-width: 150px; 
+  min-width: 150px;
 }
 
 .stats-icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.stats-icon:hover {
+  transform: scale(1.1);
 }
 
 .stats-info {
@@ -155,10 +291,10 @@ body {
 }
 
 .stats-number {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
@@ -166,11 +302,11 @@ body {
   }
 
   .about-text {
-    padding: 0;
+    padding: 1rem;
   }
 
   .founders-images {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .stats-content {
