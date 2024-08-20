@@ -1,84 +1,154 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Reggae+One&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-
-
+/* Navbar Styles */
 .navbar {
- /* Change to a solid color or gradient as needed */
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  font-family: "Sirin Stencil", sans-serif;
+  background-color: transparent;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 15px 20px;
 }
 
-
-.nav-text{
-  margin:auto;
+.navbar_bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(34, 193, 195, 0.8) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-/* Adjust the logo size and add margin */
+.navbar .nav-link a {
+  color: #FFF;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none; 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF6347;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar .nav-link a:hover {
+  color: #FFD700;
+  transform: translateY(-3px);
+}
+
+.navbar .nav-link a.active {
+  color: #17cc50;
+  border-bottom: 3px solid #FFD700;
+}
+
 .BrandLogo {
-  width: 150px; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 1rem; /* Space between logo and navigation links */
-  transition: transform 0.3s ease-in-out;
+  width: 160px;
+  transition: transform 0.3s ease;
 }
 
 .BrandLogo:hover {
-  transform: scale(1.1); /* Slightly enlarge logo on hover */
+  transform: scale(1.1) rotate(-5deg);
 }
 
-/* Remove underline from links */
-.nav-link a {
-  text-decoration: none;
+.navbar .toggle_class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.nav-link a.active {
-  text-decoration: none;
-}
-.Nav-List .nav-link a:hover {
-  color: #00ff37; /* Highlight color on hover */
+.navbar .toggle_class:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.active {
-  background-color: green; /* Background color for active link */
-  color: white !important; /* Text color for active link */
-  border-radius: 5px; /* Rounded corners */
-  padding: 0.5rem 1rem; /* Add padding */
+.dark .navbar_bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 141, 183, 0.9) 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-collapse {
-  transition: height 0.3s ease, opacity 0.3s ease;
+.dark .navbar .nav-link a {
+  color: #E0E0E0;
 }
 
-.navbar-collapse.collapsing {
-  height: 0;
-  opacity: 0;
+.dark .navbar .nav-link a.active {
+  color: #FF6347;
+  border-bottom: 3px solid #FF6347;
 }
 
-.navbar-collapse.show {
-  height: auto;
-  opacity: 1;
+/* Button Styles */
+.navbar .btn-outline-success {
+  border-color: #FFD700;
+  color: #FFD700;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.ms-auto {
-  margin-left: auto;
+.navbar .btn-outline-success:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
 }
 
-button {
-
-  font-family: "Titillium Web", sans-serif;
+.navbar .btn-success {
+  background-color: #FF6347;
+  border-color: #FF6347;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.green-btn {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove border */
-  border-radius: 20px; /* Rounded corners */
+.navbar .btn-success:hover {
+  background-color: #FFD700;
+  color: #000;
+  transform: scale(1.05);
 }
 
-.green-btn:hover {
-  background-color: #45a049; /* Darker green on hover */
-  color: white; /* Keep text color white on hover */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar_bg {
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .navbar-end {
+      margin-top: 10px;
+  }
+
+  .navbar .nav-link a {
+      margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+      flex-direction: column;
+  }
+
+  .toggle_class {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+/* Scroll Effect */
+.navbar_scroll {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  
+  padding: 0.1px 20px !important;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar_scroll .nav-link a {
+  color: #FFFFFF !important;
 }

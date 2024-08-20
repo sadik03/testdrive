@@ -41,25 +41,21 @@ export default function NavBar() {
   const handleChampAdmissionShow = () => setShowChampAdmission(true);
 
   useEffect(() => {
-    // Close navbar when clicking a link
-    const navLinks = document.querySelectorAll('.nav-link a');
-    const handleClick = () => {
-      const navBarToggle = document.querySelector('.navbar-collapse');
-      if (navBarToggle.classList.contains('show')) {
-        navBarToggle.classList.remove('show');
+    const handleScroll = () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('navbar_scroll');
+      } else {
+        nav.classList.remove('navbar_scroll');
       }
     };
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', handleClick);
-    });
-
+  
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      navLinks.forEach(link => {
-        link.removeEventListener('click', handleClick);
-      });
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
 
   return (
     <BrowserRouter>

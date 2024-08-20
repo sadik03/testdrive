@@ -22,6 +22,7 @@ const Home = () => {
         minHeight: '100vh',
         position: 'relative',
         backgroundAttachment: 'fixed', 
+        
       }}
     >
       <div className='hero-overlay'></div>
