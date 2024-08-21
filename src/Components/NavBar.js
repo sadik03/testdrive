@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
-import logo from "../Images/main/flogo.png";
+import logo from "../Images/main/newww.png";
 import "../Pages/CSS/NavBar.css";
 import Home from '../Pages/Home';
 import About from '../Pages/About';
