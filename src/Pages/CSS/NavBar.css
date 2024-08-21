@@ -162,7 +162,7 @@
 
   .BrandLogo {
     width: 60px; /* Enlarged size on hover */
-    transform: scale(2); /* Slightly larger with scale */
+    transform: scale(1.8); /* Slightly larger with scale */
   }
 
   .toggle_class {
