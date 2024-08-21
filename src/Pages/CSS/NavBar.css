@@ -14,7 +14,7 @@
 
 .navbar .nav-link a {
   color: #0b0b0b;
-  padding: 10px 15px;
+  padding: 10px 15px;            padding: 8px 10px;
   margin: 0 10px;
   font-weight: bold;
   position: relative;
@@ -51,25 +51,15 @@
 }
 
 .BrandLogo {
-  width: 160px;
+  width: 100px;
   transition: transform 0.3s ease;
 }
 
-.BrandLogo:hover {
-  animation: pulse 1.5s infinite; /* Pulse animation */
+.BrandLogo {
+
+  transform: scale(1.4); /* Slightly larger with scale */
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 
 
@@ -157,7 +147,7 @@
 
   .BrandLogo {
     width: 50px; /* Smaller logo for mobile */
-    padding-left: 10px;
+    padding-left: 15px;
     
   }
 
