@@ -156,7 +156,12 @@
   }
 
   .BrandLogo {
-    width: 80px; /* Smaller logo for mobile */
+    width: 50px; /* Smaller logo for mobile */
+  }
+
+  .BrandLogo {
+    width: 60px; /* Enlarged size on hover */
+    transform: scale(1.2); /* Slightly larger with scale */
   }
 
   .toggle_class {
