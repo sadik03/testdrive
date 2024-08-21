@@ -152,7 +152,7 @@
 
   .navbar .nav-link {
     flex-direction: column;
-    margin: 5px 0; /* Adjust margin for stacked links */
+    margin: 0.1px 0; /* Adjust margin for stacked links */
   }
 
   .BrandLogo {
