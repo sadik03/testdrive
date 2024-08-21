@@ -144,16 +144,31 @@
   }
 }
 
+/* Responsive adjustments for mobile view */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 8px 10px; /* Reduced padding for mobile */
+  }
+
   .navbar .nav-link {
-      flex-direction: column;
+    flex-direction: column;
+    margin: 5px 0; /* Adjust margin for stacked links */
+  }
+
+  .BrandLogo {
+    width: 120px; /* Smaller logo for mobile */
   }
 
   .toggle_class {
-      width: 35px;
-      height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar_scroll {
+    padding: 5px 10px; /* Adjusted padding when scrolling */
   }
 }
+
 
 /* Scroll Effect */
 .navbar_scroll {
