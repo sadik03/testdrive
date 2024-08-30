@@ -2,7 +2,7 @@
 .navbar {
   background-color: transparent;
   transition: background-color 0.3s ease, padding 0.3s ease;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .navbar_bg {
@@ -14,7 +14,7 @@
 
 .navbar .nav-link a {
   color: #0b0b0b;
-  padding: 10px 15px;
+  padding: 10px 15px;            padding: 8px 10px;
   margin: 0 10px;
   font-weight: bold;
   position: relative;
@@ -51,25 +51,15 @@
 }
 
 .BrandLogo {
-  width: 160px;
+  width: 100px;
   transition: transform 0.3s ease;
 }
 
-.BrandLogo:hover {
-  animation: pulse 1.5s infinite; /* Pulse animation */
+.BrandLogo {
+
+  transform: scale(1.4); /* Slightly larger with scale */
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 
 
@@ -144,16 +134,38 @@
   }
 }
 
+/* Responsive adjustments for mobile view */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 8px 10px; /* Reduced padding for mobile */
+  }
+
   .navbar .nav-link {
-      flex-direction: column;
+    flex-direction: column;
+    margin: 0.1px 0; /* Adjust margin for stacked links */
+  }
+
+  .BrandLogo {
+    width: 50px; /* Smaller logo for mobile */
+    padding-left: 15px;
+    
+  }
+
+  .BrandLogo {
+    width: 60px; /* Enlarged size on hover */
+    transform: scale(1.9); /* Slightly larger with scale */
   }
 
   .toggle_class {
-      width: 35px;
-      height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar_scroll {
+    padding: 5px 10px; /* Adjusted padding when scrolling */
   }
 }
+
 
 /* Scroll Effect */
 .navbar_scroll {
