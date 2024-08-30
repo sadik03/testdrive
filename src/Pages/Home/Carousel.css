@@ -1,66 +1,24 @@
-.swiper-slide {
+.swiper-slide{
     width: 15rem;
     height: 23rem;
     position: relative;
-   
-  }
-  
-  .swiper-slide img {
+}
+.swiper-slide img{
     width: 15rem;
     height: 23rem;
     object-fit: cover;
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 0.8s ease, opacity 0.8s ease ;
     border: 5px solid #fff;
     border-radius: 10px;
-    
-  }
-  
-  /* Media query for tablets and small devices */
-  @media (max-width: 1024px) {
-    .swiper-slide {
-      width: 12rem;
-      height: 20rem;
+}
+@media only screen and(max-width:500px){
+    .swiper-slide{
+        width: 9rem !important;
+        height: 17rem !important;
     }
-    .swiper-slide img {
-      width: 12rem;
-      height: 20rem;
+    .swiper-slide img{
+        width: 9rem !important;
+        height: 17rem !important;
     }
-  }
-  
-  @media (max-width: 768px) {
-    .swiper-slide {
-      width: 10rem;
-      height: 18rem;
-    }
-    .swiper-slide img {
-      width: 10rem;
-      height: 18rem;
-    }
-  }
-  
-  /* Media query for small phones */
-  @media (max-width: 576px) {
-    .swiper-slide {
-        
-      width: 9rem;
-      height: 17rem;
-    
-    }
-    .swiper-slide img {
-      width: 9rem;
-      height: 17rem;
-    }
-  }
-  
-  /* Media query for extra small phones */
-  @media (max-width: 480px) {
-    .swiper-slide {
-      width: 8rem;
-      height: 14rem;
-    }
-    .swiper-slide img {
-      width: 8rem;
-      height: 14rem;
-    }
-  }
-  
+}
+

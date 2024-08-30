@@ -2,7 +2,7 @@ import { Button } from "./Button";
 import React, { useEffect, useRef } from "react";
 import { TweenMax, gsap } from "gsap";
 import Membership from "./Membership";
-import "./Plan.css";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default function Plans() {

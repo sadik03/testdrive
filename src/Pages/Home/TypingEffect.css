@@ -147,8 +147,11 @@ p {
     /* background-color: transparent;
     text-align: center;
     color: white; */
+  
     font-size: 1rem;
     width: 23rem;
+    position: relative;
+    right: 15px;
     
     
   }

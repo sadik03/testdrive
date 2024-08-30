@@ -107,7 +107,7 @@ const Membership = () => {
       {/* Membership content */}
       <div className="membership-container">
 
-<div>
+<div className='feature'>
 <Features/>
 </div>
 

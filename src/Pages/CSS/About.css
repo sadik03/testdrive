@@ -15,7 +15,7 @@ body {
 
 /* Blurred background */
 .blurred-background {
-  /* background-image: url('../assets/bn6.jpg'); */
+ 
   background-size: cover;
   background-position: center;
   filter: blur(10px);
@@ -35,9 +35,9 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.95);
+
   border-radius: 15px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
 }
 
 /* About section styles */

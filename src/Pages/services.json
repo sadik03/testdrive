@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Personalized Training Programs",
+      "description": "Customized training plans designed to enhance the skills of each player based on their current level and goals. Our programs focus on both physical and mental development.",
+      "img": "https://cdn.openart.ai/uploads/image_jOe5lsCm_1724226275877_512.webp"
+    },
+    {
+      "id": 2,
+      "title": "Grassroots Skill Development",
+      "description": "We provide foundational skill development sessions for young athletes, ensuring they acquire the essential techniques and knowledge needed to excel in their chosen sport.",
+      "img": "https://cdn.openart.ai/uploads/image_YM5KKC0W_1724226416286_raw.jpg"
+    },
+    {
+      "id": 3,
+      "title": "IT-Supported Training Analytics",
+      "description": "Leverage technology with our advanced analytics tools to track progress, analyze performance, and optimize training routines for better outcomes.",
+      "img": "https://cdn.openart.ai/uploads/image_N6YcxD--_1724226219558_raw.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Olympic Preparation Programs",
+      "description": "Our specialized Olympic training programs are designed to prepare athletes for the highest level of competition. We aim to maximize their potential and increase the chances of winning medals.",
+      "img": "https://cdn.openart.ai/uploads/image_dsp2KZC9_1724226309696_512.webp"
+    },
+    {
+      "id": 5,
+      "title": "Sports Camps and Clinics",
+      "description": "Join our intensive sports camps and clinics, led by experienced coaches. These programs are perfect for players looking to improve specific skills or prepare for upcoming competitions.",
+      "img": "https://cdn.openart.ai/uploads/image_mCkZ5IHz_1724226578695_raw.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Youth Sports Education",
+      "description": "We offer comprehensive sports education programs tailored for young athletes, focusing on developing a strong foundation in physical education and sportsmanship.",
+      "img": "https://cdn.openart.ai/uploads/image_XXQxIMh7_1724226662884_raw.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Coaching and Mentorship",
+      "description": "Our experienced coaches provide one-on-one mentorship to help athletes navigate their sports careers, offering guidance on everything from skill development to mental toughness.",
+      "img": "https://cdn.openart.ai/uploads/image_cGNnVZ67_1724226812769_raw.jpg"
+    }
+  ]
+}

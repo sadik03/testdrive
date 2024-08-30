@@ -5,9 +5,7 @@ import TypingEffect from "./Home/TypingEffect";
 import Trainers from "./Trainers";
 import ImageSlide from "./Home/ImageSlide";
 import "./CSS/Home.css"; // Make sure to import the CSS file
-
 import Reviews from "./Reviews";
-
 
 
 const Home = () => {
@@ -22,7 +20,6 @@ const Home = () => {
         minHeight: '100vh',
         position: 'relative',
         backgroundAttachment: 'fixed', 
-        
       }}
     >
       <div className='hero-overlay'></div>

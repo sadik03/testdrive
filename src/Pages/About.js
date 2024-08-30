@@ -12,7 +12,8 @@ import Loader from './Loader'; // Import the Loader component
 import './CSS/About.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import BackgroundImage from "../assets/bn6.jpg";
+      
 const About = () => {
   const navigate = useNavigate();
 
@@ -24,6 +25,23 @@ const About = () => {
     <div className="about-page">
       {/* Blurred background image */}
       <div className="blurred-background"></div>
+      <div
+        className="blurred-background"
+        style={{
+          backgroundImage: `url(${BackgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(8px)',
+          position: 'absolute',
+          backgroundAttachment: 'fixed', 
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: -1,
+        }}
+      ></div>
 
       <div className="about-container">
         {/* About section */}
@@ -115,17 +133,17 @@ const About = () => {
           </h2>
           <div className="achievements-list">
             <div className="achievement-item">
-              <img src="/src/assets/icons/gold-medal.png" alt="Gold Medal" className="achievement-icon" />
+              <img src="https://i.pinimg.com/originals/25/07/be/2507be4bb61c8d16e464faa8319b5df7.png" alt="Gold Medal" className="achievement-icon" />
               <h4 className="achievement-title">Olympic Gold Medals</h4>
               <p>20+</p>
             </div>
             <div className="achievement-item">
-              <img src="/src/assets/icons/trophy.png" alt="Trophies" className="achievement-icon" />
+              <img src="https://banner2.cleanpng.com/20240329/ako/transparent-red-ribbon-gold-trophy-with-red-ribbon-and-confetti660642e61f4876.67344761.webp" alt="Trophies" className="achievement-icon" />
               <h4 className="achievement-title">National Trophies</h4>
               <p>50+</p>
             </div>
             <div className="achievement-item">
-              <img src="/src/assets/icons/award.png" alt="Awards" className="achievement-icon" />
+              <img src="https://banner2.cleanpng.com/20180309/odw/av02csuah.webp" alt="Awards" className="achievement-icon" />
               <h4 className="achievement-title">International Awards</h4>
               <p>15+</p>
             </div>
@@ -139,14 +157,15 @@ const About = () => {
           </h2>
           <div className="testimonials">
             <div className="testimonial-item">
-              <img src="/src/assets/athlete1.jpg" alt="Athlete 1" className="testimonial-img" />
+            <img src="https://img.freepik.com/free-photo/scene-from-olympic-games-tournament-with-athletes-competing_23-2151470946.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724025600&semt=ais_hybrid" alt="Athlete 2" className="testimonial-img" />
+
               <p className="testimonial-text">
                 "ARS Kreedashala provided me with the perfect platform to enhance my skills and reach my full potential. Their support and guidance were instrumental in my success."
               </p>
               <p className="testimonial-author">- Athlete 1</p>
             </div>
             <div className="testimonial-item">
-              <img src="/src/assets/athlete2.jpg" alt="Athlete 2" className="testimonial-img" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmkYmvUjrtfoXlI2Z2nmXFxnntJOc-wQklGh9pT5PSL_cItnUgHM72b_1TqyHS0mft13E&usqp=CAU" alt="Athlete 2" className="testimonial-img" />
               <p className="testimonial-text">
                 "The training programs and personalized coaching have helped me excel in my sport. I am grateful for the opportunities provided by ARS Kreedashala."
               </p>

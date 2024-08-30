@@ -73,12 +73,12 @@ export default function Trainers() {
   return (
     <>
       <div className="head-text">
-        <h1 className="text" >Trainers</h1>
+        <h1 className="text-white" >Trainers</h1>
       </div>
       {/*<h1 className="hi">Trainers</h1>*/}
       <div className="fet--contain">
         <div className="head">
-          <h2 className="why-title"   >Why Ars Personal Trainers?</h2>
+          <h2 className="text-white"   >Why Ars Personal Trainers?</h2>
           <div className="underline"></div>
           <div >
             <p className="parag">
@@ -128,7 +128,7 @@ export default function Trainers() {
         </div>
       </div>
       <div className="why-t">
-        <h3 className="text">Why Personal Trainer</h3>
+        <h3 className="text-white">Why Personal Trainer</h3>
         <div className="underline"></div>
         <div className="why--container">
           <div

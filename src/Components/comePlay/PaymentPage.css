@@ -1,0 +1,58 @@
+/* PaymentPage.css */
+
+.payment-page-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: 120px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-page-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .additional-options h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .additional-options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .total-amount h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .pay-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #218838;
+  }
+  

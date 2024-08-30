@@ -43,7 +43,13 @@ const Contact = () => {
   return (
     <div className="home-page" style={{ minHeight: '100vh'}}>
       {/* Background Image with Blur */}
-      <div
+
+
+      <div className="main">
+
+        
+        <Container>
+        <div
         style={{
           backgroundImage: `url(${BackgroundImage})`,
           backgroundSize: 'cover',
@@ -51,7 +57,7 @@ const Contact = () => {
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed', 
           filter: 'blur(8px)',
-          position: 'absolute',
+   position:'absolute',
           top: 0,
           left: 0,
           right: 0,
@@ -59,9 +65,6 @@ const Contact = () => {
           zIndex: -1,
         }}
       ></div>
-
-      <div className="main">
-        <Container>
           <Row>
             {/* Lottie Animation Section */}
             <div className="col-md-12 col-lg-6">

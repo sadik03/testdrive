@@ -1,0 +1,148 @@
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 13rem;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    
+  }
+  
+
+
+
+
+
+  h1{
+    color: white;
+  }
+  body {
+    background-image: url("https://images.unsplash.com/photo-1607627000458-210e8d2bdb1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnRzfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #050505;
+  }
+  .service-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+
+
+  .comePlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fffefe75;
+    flex-direction: row; /* Default for larger screens */
+}
+
+.comePlay .Head-title {
+    flex: 1;
+    font-size: 3rem;
+    text-align: left;
+    margin-right: 50px;
+    color: #fffdfd;
+}
+
+.comePlay .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.play-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .comePlay {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        text-align: center;
+        padding: 30px;
+    }
+
+    .comePlay .Head-title {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+    }
+
+    .comePlay .card {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .comePlay .Head-title {
+        font-size: 2rem;
+    }
+
+    .play-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comePlay {
+        padding: 20px;
+    }
+
+    .comePlay .Head-title {
+        font-size: 1.8rem;
+    }
+
+    .play-button {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+}
