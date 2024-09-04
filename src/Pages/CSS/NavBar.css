@@ -29,7 +29,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #FF6347;
+  background-color: #68a9d3;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -41,13 +41,13 @@
 }
 
 .navbar .nav-link a:hover {
-  color: #FFD700;
+  color: #68a9d3;
   transform: translateY(-3px);
 }
 
 .navbar .nav-link a.active {
-  color: #17cc50;
-  border-bottom: 3px solid #FFD700;
+  color: #68a9d3;
+  border-bottom: 3px solid #68a9d3;
 }
 
 .BrandLogo {
@@ -95,25 +95,25 @@
 
 /* Button Styles */
 .navbar .btn-outline-success {
-  border-color: #FFD700;
-  color: #FFD700;
+  border-color: #68a9d3;
+  color: #68a9d3;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .btn-outline-success:hover {
-  background-color: #FFD700;
+  background-color: #68a9d3;
   color: #000;
   transform: scale(1.05);
 }
 
 .navbar .btn-success {
-  background-color: #FF6347;
-  border-color: #FF6347;
+  background-color: #68a9d3;
+  border-color: #68a9d3;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .btn-success:hover {
-  background-color: #FFD700;
+  background-color: #68a9d3;
   color: #000;
   transform: scale(1.05);
 }

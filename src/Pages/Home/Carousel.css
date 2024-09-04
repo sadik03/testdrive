@@ -1,24 +1,29 @@
-.swiper-slide{
+.swiper-slide {
     width: 15rem;
     height: 23rem;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the slide */
 }
-.swiper-slide img{
+
+.swiper-slide img {
     width: 15rem;
     height: 23rem;
     object-fit: cover;
-    transition: transform 0.8s ease, opacity 0.8s ease ;
-    border: 5px solid #fff;
-    border-radius: 10px;
-}
-@media only screen and(max-width:500px){
-    .swiper-slide{
-        width: 9rem !important;
-        height: 17rem !important;
-    }
-    .swiper-slide img{
-        width: 9rem !important;
-        height: 17rem !important;
-    }
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    border-radius: 10px; /* Keep the border-radius if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to the image */
 }
 
+@media only screen and (max-width: 500px) {
+    .swiper-slide {
+        width: 9rem !important;
+        height: 17rem !important;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Adjust shadow for smaller screens */
+    }
+
+    .swiper-slide img {
+        width: 9rem !important;
+        height: 17rem !important;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Adjust shadow for smaller screens */
+    }
+}

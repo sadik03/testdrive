@@ -1,4 +1,6 @@
-/* TypingEffect.css */
+
+
+
 .container {
   text-align: left;
   padding: 20px;
@@ -9,11 +11,12 @@
 }
 
 .text-ars {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Anklepants" Anklepants;
   font-size: 2.5rem; /* Adjust as needed */
   font-weight: bold;
   text-align: center;
   margin: 20px auto;
+  
 }
 
 .admission-text {
@@ -27,10 +30,11 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  
 }
 
 .admission-text:hover {
-  background-color: #e67e22;
+  background-color: #68a9d3;
   transform: scale(0.95);
 }
 
@@ -57,7 +61,7 @@ p {
 
 .btn-text {
   background-color: transparent;
-  border: 2px solid #f39c12;
+  border: 2px solid #68a9d3; /* Updated color */
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -65,19 +69,18 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .btn-para {
   background-color: transparent;
   text-align: center;
   color: white;
   font-size: 1rem;
   width: 26rem;
-  
-  
 }
 
 .btn-text:hover {
-  background-color: #f39c12;
-  border-color: #f39c12;
+  background-color: #f39c12; /* Updated color */
+  border-color: #68a9d3; /* Updated color */
   transform: scale(0.95);
 }
 
@@ -144,16 +147,10 @@ p {
   }
 
   .btn-para {
-    /* background-color: transparent;
-    text-align: center;
-    color: white; */
-  
     font-size: 1rem;
     width: 23rem;
     position: relative;
     right: 15px;
-    
-    
   }
 }
 
@@ -166,4 +163,8 @@ p {
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
+}
+
+.typing-words {
+  color: #68a9d3; /* Change the words' color to blue */
 }
