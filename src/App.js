@@ -24,24 +24,27 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar'; // Adjust the import path as necessary
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Service from './Pages/Service';
+import Home from './Pages/Home/Home';
+import About from './Pages/ABOUT/About';
+import Contact from './Pages/CONTACT/Contact';
+import Service from './Pages/SERVICE/Service';
 import ServiceDetail from './Pages/ServiceDetails';
-import BookingForm from './Pages/BookingForm';
-import Membership from './Pages/Membership';
-import MembershipDetail from './Pages/MembershipDetail';
-import ProfileCreationForm from './Pages/ProfileCreationForm';
-import LearnMore from './Pages/LearnMore';
+
+
+
+import LearnMore from './Pages/ABOUT/LearnMore';
 import MemberForm from './Pages/Registration/MemberForm';
 import GuestForm from './Pages/Registration/GuestForm';
 import CoachForm from './Pages/Registration/CoachForm';
 import AdmissionForm from './Pages/AdmissionForm';
-import ComePlay from './Components/comePlay/ComePlay';
-import SportsDetail from './Components/comePlay/SportsDetail';
-import PaymentPage from './Components/comePlay/PaymentPage';
-import ConfirmationPage from './Components/comePlay/ConfirmationPage';
+import ComePlay from './Pages/comePlay/ComePlay';
+import SportsDetail from './Pages/comePlay/SportsDetail';
+import PaymentPage from './Pages/comePlay/PaymentPage';
+import ConfirmationPage from './Pages/comePlay/ConfirmationPage';
+import Membership from './Pages/MEMBERSHIP/Membership';
+import MembershipDetail from './Pages/MEMBERSHIP/MembershipDetail';
+import GymProfile from './Pages/GYM/GymProfile';
+import ProfileSettings from './Pages/GYM/ProfileSettings';
 
 
 function App() {
@@ -55,8 +58,8 @@ function App() {
         <Route path="/Membership" element={<Membership />} />
         <Route path="/member/:id" element={<MembershipDetail />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/bookingform/:type" element={<BookingForm />} />
-        <Route path="/create-profile" element={<ProfileCreationForm />} />
+       
+      
         <Route path="/learn-more" element={<LearnMore />} />
         <Route path="/" element={<Home />} />
         <Route path="/member" element={<MemberForm />} />
@@ -68,6 +71,9 @@ function App() {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
 
+        <Route path="/profile" element={<GymProfile />} />
+
+        <Route path="/settings" element={<ProfileSettings />} />
        
       </Routes>
     </BrowserRouter>

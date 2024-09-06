@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { jsPDF } from "jspdf";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import '../CSS/MemberForm.css';
+import './MemberForm.css';
 
 const MemberForm = () => {
   const [formData, setFormData] = useState({

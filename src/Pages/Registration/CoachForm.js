@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import '../CSS/CoachForm.css';
+import './CoachForm.css';
 
 const CoachForm = () => {
   const [formData, setFormData] = useState({

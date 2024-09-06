@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import '../CSS/GuestForm.css';
+import './GuestForm.css';
 
 const GuestForm = () => {
   const [formData, setFormData] = useState({

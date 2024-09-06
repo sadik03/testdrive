@@ -10,13 +10,28 @@
   animation: fadeIn 2s ease-in-out;
 }
 
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../assets/fonts/Anklepants.otf') format('woff2');
+      
+
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
 .text-ars {
-  font-family: "Anklepants" Anklepants;
-  font-size: 2.5rem; /* Adjust as needed */
-  font-weight: bold;
+  font-family: 'MyCustomFont';
+  font-size: 3.5rem; /* Adjust as needed */
+
   text-align: center;
   margin: 20px auto;
-  
 }
 
 .admission-text {

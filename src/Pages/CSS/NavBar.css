@@ -1,11 +1,13 @@
 /* Navbar Styles */
 .navbar {
+  /* Initial transparent background with smooth transition effects */
   background-color: transparent;
   transition: background-color 0.3s ease, padding 0.3s ease;
   padding: 15px 20px;
 }
 
 .navbar_bg {
+  /* Gradient background with blur and shadow effects for navbar */
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(34, 193, 195, 0.8) 100%);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -13,8 +15,9 @@
 }
 
 .navbar .nav-link a {
+  /* Navbar link styles with padding, margins, and hover effects */
   color: #0b0b0b;
-  padding: 10px 15px;            padding: 8px 10px;
+  padding: 8px 10px;
   margin: 0 10px;
   font-weight: bold;
   position: relative;
@@ -23,6 +26,7 @@
 }
 
 .navbar .nav-link a::before {
+  /* Underline effect on hover */
   content: '';
   position: absolute;
   width: 100%;
@@ -36,34 +40,32 @@
 }
 
 .navbar .nav-link a:hover::before {
+  /* Reveal underline effect */
   visibility: visible;
   transform: scaleX(1);
 }
 
 .navbar .nav-link a:hover {
+  /* Link hover color change and slight movement */
   color: #68a9d3;
   transform: translateY(-3px);
 }
 
 .navbar .nav-link a.active {
+  /* Active link color and underline */
   color: #68a9d3;
   border-bottom: 3px solid #68a9d3;
 }
 
 .BrandLogo {
+  /* Logo styles with hover scaling effect */
   width: 100px;
   transition: transform 0.3s ease;
-}
-
-.BrandLogo {
-
   transform: scale(1.4); /* Slightly larger with scale */
 }
 
-
-
-
 .navbar .toggle_class {
+  /* Toggle button styles for navbar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,61 +78,69 @@
 }
 
 .navbar .toggle_class:hover {
+  /* Hover effect for toggle button */
   background: rgba(255, 255, 255, 0.2);
 }
 
 .dark .navbar_bg {
+  /* Dark mode background with enhanced shadow */
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 141, 183, 0.9) 100%);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .dark .navbar .nav-link a {
+  /* Link color in dark mode */
   color: #E0E0E0;
 }
 
 .dark .navbar .nav-link a.active {
+  /* Active link color in dark mode */
   color: #FF6347;
   border-bottom: 3px solid #FF6347;
 }
 
 /* Button Styles */
 .navbar .btn-outline-success {
+  /* Outline button styles with hover effect */
   border-color: #68a9d3;
   color: #68a9d3;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .btn-outline-success:hover {
+  /* Hover effect for outline button */
   background-color: #68a9d3;
   color: #000;
   transform: scale(1.05);
 }
 
 .navbar .btn-success {
-  background-color: #68a9d3;
-  border-color: #68a9d3;
+  /* Solid button styles with transition effects */
+  background-color: #407ba3;
+  border-color: #407ba3;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar .btn-success:hover {
-  background-color: #68a9d3;
+  /* Hover effect for solid button */
+  background-color: #407ba3;
   color: #000;
   transform: scale(1.05);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for tablet view */
 @media (max-width: 1024px) {
   .navbar_bg {
-      padding: 10px;
-      border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;
   }
 
   .navbar-end {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   .navbar .nav-link a {
-      margin: 0 5px;
+    margin: 0 5px;
   }
 }
 
@@ -148,7 +158,6 @@
   .BrandLogo {
     width: 50px; /* Smaller logo for mobile */
     padding-left: 15px;
-    
   }
 
   .BrandLogo {
@@ -166,15 +175,68 @@
   }
 }
 
+/* User Avatar */
+.user-avatar-btn {
+  /* Styles for the user avatar button */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
 
-/* Scroll Effect */
+.user-avatar {
+  /* User avatar image styling */
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.user-avatar-btn:hover .user-avatar {
+  /* Hover effect for user avatar */
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* User Menu */
+.user-menu {
+  /* Dropdown menu for user settings with shadow */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+.user-menu .dropdown-item {
+  /* Dropdown item styling with hover effects */
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-menu .dropdown-item:hover {
+  /* Hover effect for dropdown items */
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.user-menu .dropdown-item .me-2 {
+  /* Icon sizing within dropdown items */
+  font-size: 18px;
+}
+
+/* Navbar Scroll Effect */
 .navbar_scroll {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  
-  padding: 0.1px 20px !important;
+  /* Navbar styling when scrolled */
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  padding: 10px 20px !important;
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 .navbar_scroll .nav-link a {
-  color: #FFFFFF !important;
+  /* Change text color to white */
+  color: #ffffff !important;
 }
+
+
