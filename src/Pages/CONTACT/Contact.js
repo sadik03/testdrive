@@ -8,6 +8,8 @@ import { fadeIn } from "../../variants";
 import "./Contact.css";
 import BackgroundImage from "../../assets/bnb9.jpg";
 
+
+
 const Contact = () => {
   const [toSend, setToSend] = useState({
     from_name: "",
@@ -148,6 +150,9 @@ const Contact = () => {
           </Row>
         </Container>
       </div>
+
+
+
     </div>
   );
 };

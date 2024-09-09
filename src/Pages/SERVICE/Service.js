@@ -4,6 +4,7 @@ import servicesData from "./services.json"; // Assuming you saved the JSON data 
 import Lottie from "react-lottie";
 import animationData from "../../LottieAnimation/comePlay.json"; // Replace with your Lottie animation file path
 import { useNavigate } from 'react-router-dom';
+import Footer from "../Footer/Footer";
 
 
 const Service = () => {
@@ -69,7 +70,7 @@ const Service = () => {
         
   
       </div>
- 
+      <Footer/>
     </div>
 
 

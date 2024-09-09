@@ -45,6 +45,8 @@ import Membership from './Pages/MEMBERSHIP/Membership';
 import MembershipDetail from './Pages/MEMBERSHIP/MembershipDetail';
 import GymProfile from './Pages/GYM/GymProfile';
 import ProfileSettings from './Pages/GYM/ProfileSettings';
+import MemberProfile from './Pages/GYM/MeberProfile';
+import GuestProfile from './Pages/GYM/GuestProfile';
 
 
 function App() {
@@ -74,6 +76,10 @@ function App() {
         <Route path="/profile" element={<GymProfile />} />
 
         <Route path="/settings" element={<ProfileSettings />} />
+
+        <Route path="/memberProfile" element={<MemberProfile />} />
+
+        <Route path="/guestProfile" element={<GuestProfile />} />
        
       </Routes>
     </BrowserRouter>

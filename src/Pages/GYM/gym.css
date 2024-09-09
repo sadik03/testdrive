@@ -1,215 +1,194 @@
-/* GymProfile.css */
-
-
-
-*{
-    margin: 0%;
-    padding: 0%;
-    top: 0%;
-    left: 0%;
-   
-}
-.ProfileContainer {
-    margin: 2rem auto;
-    margin-top: 90px;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg'); /* Replace with your image path */
-    background-size: cover; /* Adjusts the size of the image to cover the container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-}
-
-.HeaderSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.HeaderSection h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.HeaderSection h3 {
-    font-size: 1.2rem;
-}
-
-.PersonalDetails {
-    margin-top: 1rem;
-}
-
-.PersonalDetails p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-.Avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #f3826f;
-}
-
-.InfoSection {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.InfoCard {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 1.2rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.InfoCard h4 {
-    margin-top: 0.5rem;
-}
-
-.InfoCard p {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.SectionHeader {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+/* General Body and Font Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f7fa;
     color: #333;
-}
-
-.HorizontalScroll {
-    display: flex;
-    overflow-x: auto;
-    padding: 1rem 0;
-}
-
-.VideoCard {
-    width: 200px;
-    margin-right: 15px;
-    text-align: center;
-}
-
-.VideoThumbnail {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.DietChart,
-.SessionContainer,
-.CompetitionContainer,
-.TrainerContainer,
-.TestContainer {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-}
-
-.HealthChart p {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-.ProgressBar {
-    width: 100%;
-    height: 20px;
-    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Profile Container */
+  .ProfileContainer {
+    max-width: 1200px;
+    margin: 80px auto 20px; /* Adjust the top margin to match your navbar height */
+    padding: 20px;
+    background: #fff;
     border-radius: 10px;
-    overflow: hidden;
-    margin-top: 0.5rem;
-}
-
-.ProgressFill {
-    height: 100%;
-    background-color: #f3826f;
-}
-
-.PerformanceTracker {
-    margin-top: 2rem;
-}
-
-.TrackerContainer {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 100px); /* Full height minus margin for navbar */
+    box-sizing: border-box;
+  }
+  
+  /* Header Section */
+  .HeaderSection {
     display: flex;
-    justify-content: space-between;
-}
-
-.TrackerCard {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .Avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4caf50;
+  }
+  
+  .HeaderSection h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #4caf50;
+  }
+  
+  .HeaderSection h3 {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Personal Details */
+  .PersonalDetails p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Info Section */
+  .InfoSection {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .InfoCard {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .InfoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .InfoCard h4 {
+    margin: 0 0 10px;
+    color: #2196f3;
+  }
+  
+  /* Section Header */
+  .SectionHeader {
+    font-size: 20px;
+    margin: 30px 0 10px;
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Training Videos */
+  .HorizontalScroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .VideoCard {
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .VideoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .VideoCard p {
+    margin: 0;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.TrackerCard h5 {
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.TrackerCard p {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-/* Media Queries */
-
-/* Tablets */
-@media (max-width: 768px) {
-    .InfoCard {
-        width: 45%;
-    }
-
-    .TrackerCard {
-        width: 45%;
-    }
-
-    .HeaderSection h2 {
-        font-size: 1.5rem;
-    }
-
-    .HeaderSection h3 {
-        font-size: 1rem;
-    }
-
-    .VideoCard {
-        width: 150px;
-    }
-}
-
-/* Mobile Phones */
-@media (max-width: 480px) {
-    .InfoCard {
-        width: 100%;
-    }
-
-    .TrackerCard {
-        width: 100%;
-    }
-
-    .HeaderSection h2 {
-        font-size: 1.2rem;
-    }
-
-    .HeaderSection h3 {
-        font-size: 0.9rem;
-    }
-
-    .VideoCard {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .HorizontalScroll {
-        padding: 0.5rem 0;
-    }
-}
+  }
+  
+  /* Diet Chart */
+  .DietChart {
+    background: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .DietChart p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Session and Competition Containers */
+  .SessionContainer,
+  .CompetitionContainer,
+  .TrainerContainer,
+  .TestContainer,
+  .HealthChart,
+  .PerformanceTracker {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .SessionContainer p,
+  .CompetitionContainer p,
+  .TrainerContainer p,
+  .TestContainer p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Health Chart */
+  .ProgressBar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+  .ProgressFill {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.5s;
+  }
+  
+  /* Performance Tracker */
+  .TrackerContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .TrackerCard {
+    flex: 1;
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .TrackerCard h5 {
+    margin: 0 0 10px;
+    color: #388e3c;
+  }
+  

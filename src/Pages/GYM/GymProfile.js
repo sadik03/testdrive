@@ -43,27 +43,39 @@ const GymProfile = () => {
       <h4 className="SectionHeader">Training Videos</h4>
       <div className="HorizontalScroll">
         <div className="VideoCard">
-          <img
-            className="VideoThumbnail"
-            src="https://i.ytimg.com/vi/zrQ0N80RG6w/maxresdefault.jpg"
-            alt="Video 1"
-          />
+          <iframe
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/zrQ0N80RG6w"
+            title="Workout 1"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
           <p>Workout 1</p>
         </div>
         <div className="VideoCard">
-          <img
-            className="VideoThumbnail"
-            src="https://i.ytimg.com/vi/d024otW9dFo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD_jgiqltHpkRGdZvdjMCHBvtFXxg"
-            alt="Video 2"
-          />
+          <iframe
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/d024otW9dFo"
+            title="Workout 2"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
           <p>Workout 2</p>
         </div>
         <div className="VideoCard">
-          <img
-            className="VideoThumbnail"
-            src="https://i.ytimg.com/vi/9P__foatXbM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCbGJ5dAj6H-IA-7vOwlcVFLJT_Fw"
-            alt="Video 3"
-          />
+          <iframe
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/9P__foatXbM"
+            title="Workout 3"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
           <p>Workout 3</p>
         </div>
       </div>

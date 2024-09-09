@@ -1,43 +1,31 @@
 /* General body styles */
-/* Add slick-carousel CSS */
-@import '~slick-carousel/slick/slick.css';
-@import '~slick-carousel/slick/slick-theme.css';
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
-/* About page styles */
+/* Styling for about-page */
 .about-page {
-  background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
   padding-top: 70px;
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 }
 
-/* Hero Section */
-.hero-section {
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.hero-title {
-  font-size: 3rem;
-  font-family: 'Permanent Marker', cursive;
-  color: #fff;
-  margin: 0;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+/* Blurred background */
+.blurred-background {
+ 
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 /* About container styles */
@@ -47,11 +35,14 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+
   border-radius: 15px;
+
 }
 
-/* About Section */
+/* About section styles */
 .about-section {
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,6 +53,12 @@ body {
 .about-image {
   flex: 1;
   min-width: 300px;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
@@ -85,7 +82,6 @@ body {
   text-align: justify;
 }
 
-/* Buttons */
 .btn-primary, .btn-success {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -102,78 +98,203 @@ body {
   background-color: #2980b9;
 }
 
-/* Features Section */
-.features-section {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+/* Founders section */
+.founders-section {
+  text-align: center;
   margin-top: 3rem;
 }
 
-.feature-card {
-  background: #fff;
-  padding: 2rem;
+.founders-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
+
+.founders-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.founder-image {
+  flex: 1;
+  max-width: 250px;
+}
+
+.founder-img {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-icon {
+.founder-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievements section */
+.achievements-section {
+  margin-top: 3rem;
+}
+
+.achievements-title {
   font-size: 2rem;
-  color: #3498db;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
 }
 
-.feature-title {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+.achievements-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.feature-description {
-  font-size: 1rem;
-  color: #555;
+.achievement-item {
+  text-align: center;
 }
 
-/* Testimonials Section */
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.achievement-title {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Testimonials section */
 .testimonials-section {
-  margin-top: 4rem;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
 }
 
 .testimonials-title {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
 }
 
-.testimonial-card {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.1rem;
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.testimonial-feedback {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 1rem;
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.testimonial-name {
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+}
+
+.testimonial-author {
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
-.testimonial-position {
-  font-size: 0.9rem;
-  color: #888;
+/* Milestones section */
+.milestones-section {
+  margin-top: 3rem;
 }
 
+.milestones-title {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
 
+.milestones-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
-/* Responsive Adjustments */
+.milestone-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.milestone-date {
+  font-weight: bold;
+}
+
+.milestone-content {
+  flex: 1;
+}
+
+/* Stats section */
+.stats-section {
+  background-color: #f5f7fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.stats-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stats-text {
+  flex: 1;
+}
+
+.stats-title {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3e50;
+}
+
+.stats-highlight {
+  color: #3498db;
+}
+
+.stats-details {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stats-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.stats-icon:hover {
+  transform: scale(1.1);
+}
+
+.stats-info {
+  text-align: left;
+}
+
+.stats-number {
+  font-size: 1.75rem;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
@@ -184,17 +305,22 @@ body {
     padding: 1rem;
   }
 
-  .features-section {
+  .founders-images {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-content {
     flex-direction: column;
   }
 
-  .testimonial-slide {
-    padding: 0.5rem;
+  .stats-item {
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-title, .feature-title, .testimonials-title, .stats-title {
+  .about-title, .founders-title, .stats-title {
     font-size: 1.5rem;
   }
 

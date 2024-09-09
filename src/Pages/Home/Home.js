@@ -6,12 +6,20 @@ import Trainers from "./Trainers";
 import ImageSlide from "./ImageSlide";
 import "./Home.css"; // Make sure to import the CSS file
 import Reviews from "./Reviews";
+import Footer from "../Footer/Footer";
 
 
 
 
 const Home = () => {
   return (
+
+    <div>
+
+
+
+
+
     <div 
       className="home-page"
       style={{
@@ -50,6 +58,8 @@ const Home = () => {
 
 
     </div>
+    <Footer/>
+</div>
   );
 };
 

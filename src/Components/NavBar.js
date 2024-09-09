@@ -32,6 +32,14 @@ export default function NavBar() {
     navigate('/settings');
   };
 
+  const handleMember = () => {
+    navigate('/memberProfile');
+  };
+
+
+  const handleGuestProfile = () => {
+    navigate('/guestProfile');
+  };
 
 
   useEffect(() => {
@@ -98,8 +106,19 @@ export default function NavBar() {
 
               <Dropdown.Menu className="user-menu">
                 <Dropdown.Item  onClick={handleProfile}>
-                  <FaUserAlt className="me-2" /> Profile
+                  <FaUserAlt className="me-2" /> Gym
                 </Dropdown.Item>
+
+                <Dropdown.Item onClick={handleGuestProfile}>
+                  <FaSignOutAlt className="me-2" /> Guest
+                </Dropdown.Item>
+
+                <Dropdown.Item onClick={handleMember}>
+                  <FaSignOutAlt className="me-2" /> Member
+                </Dropdown.Item>
+
+
+
                 <Dropdown.Item onClick={handleProfileSetting}>
                   <FaCog className="me-2" /> Settings
                 </Dropdown.Item>

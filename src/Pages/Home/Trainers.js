@@ -78,13 +78,15 @@ export default function Trainers() {
       {/*<h1 className="hi">Trainers</h1>*/}
       <div className="fet--contain">
         <div className="head">
-          <h2 className="text-white"   >Why Ars Trainers?</h2>
+          <h2 className="text-white"   >Why Ars Personal Trainers?</h2>
           <div className="underline"></div>
           <div >
             <p className="parag">
-            Kreedshala trainers provide expert sports education, ensuring students receive high-quality training that promotes fitness, discipline, and teamwork. They make sports accessible to all, blending theory and practice to foster holistic development and life skills.
-Ars Kreedashala Personal Trainers are highly qualified and personalize fitness programs to suit each individual’s needs, regardless of fitness level or experience. Our trainers specialize in areas like weight loss, injury rehabilitation, sports training, and strength building. They guide you through proper techniques, motivate you, and ensure you achieve your goals safely and effectively.
-
+              Our trainers will develop a personalized training program that
+              fits your body, lifestyle and budget. They are certified experts
+              in exercise physiology, anatomy, training program development,
+              fitness assessments and applications. They excel at applying this
+              knowledge to help you achieve your goal and go further in life.
             </p>
           </div>
         </div>
@@ -141,11 +143,19 @@ Ars Kreedashala Personal Trainers are highly qualified and personalize fitness p
               alt="Fitzen gym"
             />
             <div className="welcome--headline">
-              <h3>Mission</h3>
+              <h3>Our goal? Achieving yours</h3>
               <p className="para-1">
-              Kreedshala's mission is to integrate high-quality sports education into the core of every child's learning experience. By delivering a structured curriculum that promotes physical fitness, discipline, and teamwork, Kreedshala aims to foster holistic development and empower students with skills for success both in sports and life.
+                With Personal Training, you get individual attention from an
+                expert who will draw up a training plan customized to get you
+                results. You will have an expert by your side all the way who is
+                certified and equipped with the best tools and knowledge to help
+                you get accelerated results.
               </p>
-              
+              <p>
+                At Ars, you learn from some of the best and most passionate
+                trainers around; you get an education that can empower you to
+                lead a healthy and fit lifestyle.
+              </p>
             </div>
           </div>
           <div
@@ -160,11 +170,17 @@ Ars Kreedashala Personal Trainers are highly qualified and personalize fitness p
               alt="choose personal trainer by Fitzen"
             />
             <div className="welcome--headline">
-              <h3>Vision</h3>
+              <h3>Benefits</h3>
               <p>
-              Kreedshala envisions a future where sports education is a fundamental part of every child's growth, shaping well-rounded individuals who are physically fit, mentally resilient, and equipped with values like perseverance and collaboration to excel in all areas of life.
+                Results made personal! Get the results you want with
+                professional, passionate and highly qualified experts who take
+                your goals and aspirations personally.
               </p>
-              
+              <p>
+                Our trainers are all graduates of the Fitness First Asia
+                Personal Training Foundation Programme where their know-how is
+                reviewed, updated and assessed.
+              </p>
             </div>
           </div>
         </div>
@@ -179,9 +195,9 @@ Ars Kreedashala Personal Trainers are highly qualified and personalize fitness p
             </p>
           </div> */}
           <div className="middle">
-            {/* <Button buttonStyle="btn--primary" buttonSize="btn--large">
+            <Button buttonStyle="btn--primary" buttonSize="btn--large">
               View Challenges{" "}
-            </Button>{" "} */}
+            </Button>{" "}
           </div>
         </div>
       </div>

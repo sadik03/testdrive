@@ -9,6 +9,7 @@ import cricketAnimation from '../../LottieAnimation/Weightlifting.json';
 import './Membership.css';
 import Loader from './Loader'; // Import the Loader component
 import BackgroundImage from "../../assets/bn5.jpg"; // Import the background image
+import Footer from '../Footer/Footer';
 
 
 const membershipPlans = [
@@ -74,6 +75,11 @@ const Membership = () => {
   }
 
   return (
+
+
+    <div>
+
+
     <div 
       className="home-page"
       style={{
@@ -154,6 +160,9 @@ const Membership = () => {
 
 
     </div>
+    <Footer/>
+
+</div>
   );
 };
 
