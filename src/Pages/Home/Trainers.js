@@ -107,19 +107,9 @@ export default function Trainers() {
         >
           <h3>Welcome to Personal Training by Ars Kreedashala</h3>
           <p>
-            Ars Kreedashala Personal Trainers are highly qualified and take
-            pride in treating every member as an individual. We understand that
-            different training methods suit different people so no matter what
-            your level of fitness or experience, a Personal Trainer can tailor a
-            program, show you best training practices and how to use gym
-            equipment, inspiring and motivating you along the way.{" "}
+          Kreedshala integrates sports into education for holistic development. With a globally aligned P.E. curriculum, it promotes health, fitness, and values like discipline and teamwork. Combining theory and practice, Kreedshala empowers students with skills for success both in sports and life.
           </p>
-          <p>
-            We have trainers who specialize in all areas of fitness including
-            weight loss, injury rehabilitation, sports training, core and
-            strength training. Working with a Personal Trainer is no doubt the
-            fastest and safest way to get the results you want.
-          </p>
+          
           <p>
             <strong>
               <em>For best results, choose Personal Training by Ars.</em>
