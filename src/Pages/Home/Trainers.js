@@ -143,19 +143,11 @@ export default function Trainers() {
               alt="Fitzen gym"
             />
             <div className="welcome--headline">
-              <h3>Our goal? Achieving yours</h3>
+              <h3>Mission</h3>
               <p className="para-1">
-                With Personal Training, you get individual attention from an
-                expert who will draw up a training plan customized to get you
-                results. You will have an expert by your side all the way who is
-                certified and equipped with the best tools and knowledge to help
-                you get accelerated results.
+              Kreedshala's mission is to integrate high-quality sports education into the core of every child's learning experience. By delivering a structured curriculum that promotes physical fitness, discipline, and teamwork, Kreedshala aims to foster holistic development and empower students with skills for success both in sports and life.
               </p>
-              <p>
-                At Ars, you learn from some of the best and most passionate
-                trainers around; you get an education that can empower you to
-                lead a healthy and fit lifestyle.
-              </p>
+              
             </div>
           </div>
           <div
@@ -170,17 +162,11 @@ export default function Trainers() {
               alt="choose personal trainer by Fitzen"
             />
             <div className="welcome--headline">
-              <h3>Benefits</h3>
+              <h3>Vision</h3>
               <p>
-                Results made personal! Get the results you want with
-                professional, passionate and highly qualified experts who take
-                your goals and aspirations personally.
+              Kreedshala envisions a future where sports education is a fundamental part of every child's growth, shaping well-rounded individuals who are physically fit, mentally resilient, and equipped with values like perseverance and collaboration to excel in all areas of life.
               </p>
-              <p>
-                Our trainers are all graduates of the Fitness First Asia
-                Personal Training Foundation Programme where their know-how is
-                reviewed, updated and assessed.
-              </p>
+              
             </div>
           </div>
         </div>
