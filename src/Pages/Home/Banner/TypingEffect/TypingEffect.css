@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Anklepants';
+    src: url('/src/assets/fonts/Anklepants.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  #ars-text{
+    font-family: 'Anklepants';
+  }

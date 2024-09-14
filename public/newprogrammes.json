@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Football",
+      "description": "Join our football program and enhance your soccer skills.",
+      "image1": "https://example.com/football.jpg",
+      "schedule": "Monday - Friday, 4 PM - 6 PM",
+      "coaches": [
+        {
+          "name": "John Doe",
+          "image": "https://example.com/john.jpg"
+        },
+        {
+          "name": "Jane Smith",
+          "image": "https://example.com/jane.jpg"
+        }
+      ],
+      "price": 100,
+      "duration": "2 months",
+      "availableSeats": 10
+    }
+   
+  ]
+  

@@ -1,29 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.primary{
-  background: transparent;
-  color: #FFFFFf;
-  color:#263238;
-  background-color:#4CAF4F;
-  border-radius: 3px;
-  padding: 10px 30px;
+@layer components{
+    .navbar_bg{
+        @apply bg-white dark:bg-gray-800 shadow-md;
+    }
+    .toggle_class{
+        @apply text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-1 md:py-1.5 transition-colors relative z-10;
+    }
+    .card_effect{
+        @apply transform transition-all ease-in duration-300
+    }
+    .facilities_card_img{
+        @apply block h-full w-full object-cover object-center shadow-lg transition-transform transform scale-100 group-hover:scale-105 duration-300;
+    }
+    .facilities_card_overlay{
+        @apply absolute inset-0 bg-gradient-to-t from-black to-transparent;
+    }
+    .active_link{
+        @apply text-amber-500 border-b-2 rounded-none border-b-amber-500;
+    }
 }
-.primary:hover{
-  background: #ffffff;
-  color:#263238;
-  color:#263238;
-
-}
-.secondary{
-  background: transparent;
-  color:#263238;
-  border-color:#263238;
-  border-radius: 3px;
-  padding: 10px 30px;
-}
-.secondary:hover{
-  background-color:#4CAF4F;
-  color: white;
-  border-color:#263238;
-}
-

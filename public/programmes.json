@@ -1,0 +1,164 @@
+[
+    {
+      "id": 1,
+      "name": "Football",
+      "description": "Join our football program and enhance your soccer skills. Suitable for all ages and skill levels.",
+      "image1": "https://i.ibb.co/8M69gtp/football-5754946-1280.jpg",
+      "schedule": "Mondays, Wednesdays, and Fridays from 4 PM to 6 PM",
+      "coaches": [
+        {
+          "name": "Rohan Mehra",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Maria Fatima",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 150,
+      "duration": "10 weeks",
+      "availableSeats": 15
+    },
+    {
+      "id": 2,
+      "name": "Cricket",
+      "description": "Learn the art of cricket with our experienced coaches. Suitable for beginners and advanced players.",
+      "image1": "https://i.ibb.co/PjwMF9j/cricket-724621-1280.jpg",
+      "schedule": "Tuesdays and Thursdays from 5 PM to 7 PM",
+      "coaches": [
+        {
+          "name": "Sara Khan",
+          "image": "https://previews.123rf.com/images/djvstock/djvstock1711/djvstock171100427/88942358-colorful-sports-teacher-over-white-background-vector-illustration.jpg"
+        },
+        {
+          "name": "Rahul Singh",
+          "image": "https://thumbs.dreamstime.com/b/happy-young-physical-education-teacher-holding-note-308143392.jpg"
+        }
+      ],
+      "price": 120,
+      "duration": "8 weeks",
+      "availableSeats": 12
+    },
+    {
+      "id": 3,
+      "name": "Tennis",
+      "description": "Improve your tennis skills with professional training. All skill levels are welcome.",
+      "image1": "https://i.ibb.co/9Y0VMCQ/tennis-5782695-1280.jpg",
+      "schedule": "Wednesdays and Saturdays from 3 PM to 5 PM",
+      "coaches": [
+        {
+          "name": "Sohan Mehra",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Ria Fatima",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 130,
+      "duration": "9 weeks",
+      "availableSeats": 14
+    },
+    {
+      "id": 4,
+      "name": "Badminton",
+      "description": "Enjoy the fast-paced game of badminton. Suitable for players of all ages.",
+      "image1": "https://i.ibb.co/drrztJb/badminton-1428046-1280.jpg",
+      "schedule": "Mondays and Fridays from 6 PM to 8 PM",
+      "coaches": [
+        {
+          "name": "Rohan Mehta",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Sonal Singh",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 110,
+      "duration": "8 weeks",
+      "availableSeats": 16
+    },
+
+    {
+      "id": 5,
+      "name": "Baseball",
+      "description": "Learn the fundamentals of baseball with our skilled coaches. Perfect for young athletes.",
+      "image1": "https://i.ibb.co/RDb6Z5C/baseball-7985433-1280.jpg",
+      "schedule": "Tuesdays and Thursdays from 4 PM to 6 PM",
+      "coaches": [
+        {
+          "name": "Roshan Soni",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Isha Singh",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 100,
+      "duration": "6 weeks",
+      "availableSeats": 10
+    },
+    {
+      "id": 6,
+      "name": "Basketball",
+      "description": "Dribble, shoot, and score with our basketball program. Suitable for all skill levels.",
+      "image1": "https://i.ibb.co/jywM4Zf/sports-5245098-1280.jpg",
+      "schedule": "Wednesdays and Fridays from 5 PM to 7 PM",
+      "coaches": [
+        {
+          "name": "Rahul Rohit",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Supriya",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 130,
+      "duration": "8 weeks",
+      "availableSeats": 14
+    },
+    {
+      "id": 7,
+      "name": "Swimming",
+      "description": "Take a dip and improve your swimming skills. Suitable for all ages and experience levels.",
+      "image1": "https://i.ibb.co/VtLSYXz/swimming-821622-1280.jpg",
+      "schedule": "Mondays and Thursdays from 6 PM to 8 PM",
+      "coaches": [
+        {
+          "name": "Shubham",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Priya",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 120,
+      "duration": "10 weeks",
+      "availableSeats": 20
+    },
+    {
+      "id": 8,
+      "name": "Volleyball",
+      "description": "Take a dip and improve your volleyball skills. Suitable for all ages and experience levels.",
+      "image1": "https://i.ibb.co/7rFSHZ9/volleyball-1375498-1280.jpg",
+      "schedule": "Mondays and Thursdays from 6 PM to 8 PM",
+      "coaches": [
+        {
+          "name": "Sonu Mehra",
+          "image": "https://i.graphicmama.com/resources/toons/new-flat-teacher-5/17128/siteBigWatermarkedImages/71-chart(concepts).jpg"
+        },
+        {
+          "name": "Puja Soni",
+          "image": "https://media.istockphoto.com/id/2024794196/vector/happy-young-physical-education-teacher-holding-ball.jpg?s=612x612&w=0&k=20&c=MzdhIidCjzj5SXmSyNoQQ3Uev26CqS2fSgxa2_MD6yI="
+        }
+      ],
+      "price": 120,
+      "duration": "10 weeks",
+      "availableSeats": 20
+    }
+  ]
+

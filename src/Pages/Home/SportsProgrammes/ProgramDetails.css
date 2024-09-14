@@ -1,0 +1,89 @@
+/* ProgramDetails.css */
+
+.bg-amber-300 {
+    background-color: #fbbf24; /* Adjust as needed */
+  }
+  
+  .text-gray-800 {
+    color: #1f2937; /* Dark gray for light mode text */
+  }
+  
+
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .info-card {
+    background: rgba(7, 168, 226, 0.747);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .info-card span {
+    background: rgba(7, 168, 226, 0.747);
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .coach-card {
+    background: rgba(7, 168, 226, 0.747); /* Semi-transparent white */
+    padding: 1rem;
+    border-radius: 8px;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .coach-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Limit the max width of the image */
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
