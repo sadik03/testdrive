@@ -15,18 +15,31 @@ const Login = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
-
+  
     try {
       const response = await axios.post("http://localhost:5000/api/login", {
         email,
         password,
       });
-
-      setSuccess(response.data); // Display success message
+  
+      // Assuming the response contains user information
+      const user = response.data;
+  
+      // Save user info to localStorage
+      localStorage.setItem("user", JSON.stringify(user));
+  
+      // Set success message or handle redirection
+      setSuccess("Login successful!");
+  
+      // Redirect or update state accordingly
+      setTimeout(() => {
+        window.location.href = '/';  // Redirect to home page
+      }, 1500);
     } catch (err) {
       setError(err.response ? err.response.data : "Error logging in");
     }
   };
+  
 
   return (
     <div className="login-container">

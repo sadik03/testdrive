@@ -5,173 +5,181 @@ import { motion } from "framer-motion";
 import logo from "../../../assets/logo/logo1.png";
 import rlogo from "../../../assets/logo/logoR.png";
 import useReadingProgress from "../../../Hooks/useReadingProgress";
-// import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-
-  // const navigate = useNavigate();
-
-  // const goToHome = () => {
-  //   navigate('/Home'); // navigate to the home route
-  // };
-
-  const user = null;
+  const [user, setUser] = useState(null); // Assume no user is logged in
   const [activeNav, setActiveNav] = useState("#home");
   const completion = useReadingProgress();
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const [navbarBg, setNavbarBg] = useState("transparent");
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Dropdown state for profile
 
-  /* control navbar bg */
+  /* Simulate logged-in user (you can fetch this from actual auth logic) */
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) setUser(storedUser);
+  }, []);
+
+  /* Control navbar background on scroll */
   useEffect(() => {
     const handleScroll = () => {
       setNavbarBg(window.pageYOffset > 120 ? "solid" : "transparent");
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  /* control dark mode and save data to local storage */
+  /* Control dark mode and save to local storage */
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-    /* store data to local storage */
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  /* Handle logout */
+  const handleLogout = () => {
+    setUser(null);
+    localStorage.removeItem("user"); // Clear user data from localStorage
+  };
+
+  /* Toggle profile dropdown */
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
   const navOptions = (
     <>
       <li>
-
-
-      {/* <Link to={"/contact"}>
-              <button className="contact-button">Contact me</button>
-            </Link> */}
-
-
-
-<Link to={"/"}>
-        <a
-          // href="#home"
-          className={activeNav === "#home" ? " active_link" : ""}
-          onClick={() => setActiveNav("#home")}
-        >
-          Home
-        </a>
+        <Link to={"/"}>
+          <a
+            className={activeNav === "#home" ? " active_link" : ""}
+            onClick={() => setActiveNav("#home")}
+          >
+            Home
+          </a>
         </Link>
       </li>
       <li>
-  <Link to={"/programmer"}>
-
-        <a
-          // href="#programmes"
-          className={activeNav === "#programmes" ? " active_link" : ""}
-          onClick={() => setActiveNav("#programmes")}
-        >
-          Sports
-        </a>
+        <Link to={"/programmer"}>
+          <a
+            className={activeNav === "#programmes" ? " active_link" : ""}
+            onClick={() => setActiveNav("#programmes")}
+          >
+            Sports
+          </a>
         </Link>
       </li>
       <li>
-      <Link to={"/facilities"}>
-        <a
-          // href="#facilities"
-          className={activeNav === "#facilities" ? " active_link" : ""}
-          onClick={() => setActiveNav("#facilities")}
-        >
-          Facilities
-        </a>
+        <Link to={"/facilities"}>
+          <a
+            className={activeNav === "#facilities" ? " active_link" : ""}
+            onClick={() => setActiveNav("#facilities")}
+          >
+            Facilities
+          </a>
         </Link>
       </li>
       <li>
-
-      <Link to={"/instructors"}>
-        <a
-          // href="#instructors"
-          className={activeNav === "#instructors" ? " active_link" : ""}
-          onClick={() => setActiveNav("#instructors")}
-        >
-          Instructors
-        </a>
+        <Link to={"/instructors"}>
+          <a
+            className={activeNav === "#instructors" ? " active_link" : ""}
+            onClick={() => setActiveNav("#instructors")}
+          >
+            Instructors
+          </a>
         </Link>
       </li>
       <li>
-
-      <Link to={"/about"}>
-        <a
-          // href="#aboutus"
-          className={activeNav === "#aboutus" ? " active_link" : ""}
-          onClick={() => setActiveNav("#aboutus")}
-        >
-          About Us
-        </a>
+        <Link to={"/about"}>
+          <a
+            className={activeNav === "#aboutus" ? " active_link" : ""}
+            onClick={() => setActiveNav("#aboutus")}
+          >
+            About Us
+          </a>
         </Link>
       </li>
-      
       <li>
-      <Link to={"/contact"}>
-        <a
-          // href="#contactus"
-          className={activeNav === "#contactus" ? " active_link" : ""}
-          onClick={() => setActiveNav("#contactus")}
-        >
-          Contact Us
-        </a>
+        <Link to={"/contact"}>
+          <a
+            className={activeNav === "#contactus" ? " active_link" : ""}
+            onClick={() => setActiveNav("#contactus")}
+          >
+            Contact Us
+          </a>
         </Link>
       </li>
 
-
-
-    
-      {/* if user logged then show this nav items */}
+      {/* Show profile icon and dropdown if user is logged in */}
       {user ? (
         <>
-          <li>
-            <a>Dashboard</a>
-          </li>
-          <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-            <img
-              className="w-10 rounded-full dark:border-white border-red-600 border mx-4"
-              src={
-                user.photoURL
-                  ? user.photoURL
-                  : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png"
-              }
-              alt=""
-            />
+          <div className="relative">
+            {/* Profile Icon */}
+            <div
+              className="tooltip tooltip-bottom cursor-pointer"
+              data-tip={user.displayName}
+              onClick={toggleDropdown}
+            >
+              <img
+                className="w-10 rounded-full border-red-600 border mx-4"
+                src={
+                  user.photoURL ||
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png"
+                }
+                alt="User Avatar"
+              />
+            </div>
+
+            {/* Dropdown Menu */}
+            {dropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-2">
+                <Link
+                  to="/dashboard"
+                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
+                  onClick={() => setDropdownOpen(false)} // Close dropdown on link click
+                >
+                  Dashboard
+                </Link>
+                <button
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
+                  onClick={handleLogout}
+                >
+                  Log Out
+                </button>
+              </div>
+            )}
           </div>
-          <button className="btn-sm ms-3 bg-amber-500 hover:bg-amber-600 text-white rounded">
-            Log Out
-          </button>
         </>
       ) : (
         <>
           <li>
-            <a
-            className={activeNav === "#login" ? " active_link" : ""}
-            onClick={() => setActiveNav("#login")}
-            >
-            <Link to="/login">Login</Link>
-            </a>
+            <Link to="/login">
+              <a
+                className={activeNav === "#login" ? " active_link" : ""}
+                onClick={() => setActiveNav("#login")}
+              >
+                Login
+              </a>
+            </Link>
           </li>
         </>
       )}
     </>
   );
+
   return (
     <>
-      {/* for small display */}
+      {/* Small display */}
       <div className="lg:hidden bg-green-500 flex justify-center items-center py-2">
         <img className="w-20" src={logo} alt="logo" />
       </div>
       <div
-        className={`navbar top-0 transition-all ease-out duration-300  text-white lg:fixed z-50 py-3 md:px-8 ${
+        className={`navbar top-0 transition-all ease-out duration-300 text-white lg:fixed z-50 py-3 md:px-8 ${
           navbarBg !== "transparent" ? "navbar_bg" : "lg:py-4 py-5"
         }`}
       >
