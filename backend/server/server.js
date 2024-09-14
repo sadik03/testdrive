@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs'); // Correctly importing bcryptjs
 const User = require('./models/User'); // User model
 const nodemailer = require('nodemailer');
-const otpGenerator = require('otp-generator');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,11 +24,9 @@ mongoose.connect('mongodb+srv://data:userdata@loginpass.9pfgj.mongodb.net/test',
 
 // Signup route
 app.post('/api/signup', async (req, res) => {
-  const { username, email, password } = req.body;
+  const { username, email, password , role } = req.body;
 
-//   console.log('Received signup request:', { username, email, password });
-
-  if (!username || !email || !password) {
+  if (!username || !email || !password || !role) {
     console.log('Error: All fields are required');
     return res.status(400).send('All fields are required');
   }
@@ -45,6 +42,7 @@ app.post('/api/signup', async (req, res) => {
     const newUser = new User({
       username,
       email,
+      role,
       password: hashedPassword,
     });
 
@@ -84,7 +82,7 @@ app.post('/api/login', async (req, res) => {
   });
 
 
-  // Configure Nodemailer
+// Configure Nodemailer
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -93,10 +91,15 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+// Function to generate a 4-digit numeric OTP
+function generateNumericOTP() {
+  return Math.floor(1000 + Math.random() * 9000).toString(); // Generates a random 4-digit number
+}
+
 // Endpoint to send OTP
 app.post('/api/send-otp', async (req, res) => {
   const { email } = req.body;
-  const otp = otpGenerator.generate(6, { upperCase: false, specialChars: false });
+  const otp = generateNumericOTP(); // Use the custom function to generate a 4-digit OTP
 
   otpStore[email] = otp;
 
@@ -104,7 +107,7 @@ app.post('/api/send-otp', async (req, res) => {
     await transporter.sendMail({
       to: email,
       subject: 'Your OTP Code',
-      text: `Your OTP code is ${otp}`
+      text: `Your Ars kreedashala OTP code is ${otp}`
     });
     res.status(200).send({ message: 'OTP sent successfully' });
   } catch (error) {
@@ -124,9 +127,7 @@ app.post('/api/verify-otp', (req, res) => {
   }
 });
 
-
-
-
+// Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
