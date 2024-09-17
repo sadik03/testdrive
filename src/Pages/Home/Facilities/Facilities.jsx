@@ -21,7 +21,7 @@ const Facilities = () => {
 
     return (
       <div
-        className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20"
+        className="dark:bg-gray-700 bg-[#68a9d3] pb-10 lg:pb-20"
         id="facilities"
       >
         <SectionHeader heading={"Our Academy Facilities"}></SectionHeader>

@@ -1,0 +1,51 @@
+/* Ensure the navbar is fixed at the top for small devices */
+@media (max-width: 768px) {
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: var(--navbar-bg, transparent);
+      transition: background-color 0.3s ease;
+    }
+    
+    .navbar-start .dropdown {
+      margin-right: auto; /* Align the menu icon to the left */
+    }
+    
+    .navbar-center {
+      display: none; /* Hide center content on small screens */
+    }
+  
+    .navbar-end {
+      margin-left: auto; /* Align the theme toggle to the right */
+    }
+  
+    /* Adjust search bar styles for small devices */
+    .navbar-end form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-end .input {
+      width: 100%;
+      max-width: 200px; /* Adjust the maximum width of the input field */
+    }
+  
+    .navbar-end .btn {
+      margin-left: 0.5rem;
+    }
+  
+    /* Adjust the logo size for small devices */
+    .lg:hidden {
+      display: block;
+    }
+  
+    .hidden.md:block {
+      display: none;
+    }
+  }
+  

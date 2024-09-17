@@ -13,7 +13,7 @@ const InstructorsCard = ({staff}) => {
             alt="Shoes"
           />
         </figure>
-        <div className="card-body text-gray-800 dark:text-white">
+        <div className="card-body text-gray-800 ">
           <h2 className="card-title ">{name}</h2>
           <p className="-mt-4">{designation}</p>
           <p className="-mt-2 text-base">

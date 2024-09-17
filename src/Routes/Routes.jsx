@@ -11,7 +11,15 @@ import AboutUs from '../Pages/Home/AboutUs/AboutUs';
 import ContactUs from '../Pages/Home/ContactUs/ContactUs';
 import Signup from '../Pages/Home/Login/Signup';
 import ProgramDetails from '../Pages/Home/SportsProgrammes/ProgramDetails';
-
+import Membership from '../Pages/Home/Membership/Membership';
+import App from '../App';
+import Blogs from '../Pages/Home/Blogs/Blogs';
+import BlogDetails from '../Pages/Home/Blogs/BlogDetails';
+import Service from '../Pages/Home/Service/Service';
+import ComePlay from '../Pages/Home/comePlay/ComePlay';
+import SportsDetail from '../Pages/Home/comePlay/SportsDetail';
+import PaymentPage from '../Pages/Home/comePlay/PaymentPage';
+import ConfirmationPage from '../Pages/Home/comePlay/ConfirmationPage';
 const router = createBrowserRouter([
     {
         path:'/',
@@ -22,6 +30,32 @@ const router = createBrowserRouter([
                 path:'/',
                 element:<Home/>
             },
+
+
+{
+path:'/comePlay',
+element:<ComePlay/>
+},
+
+{
+    path:'/sports/:id',
+    element:< SportsDetail/>
+    },
+
+
+    {
+        path:'/payment',
+        element:< PaymentPage />
+        },
+    
+
+    {
+        path:'/confirmation',
+        element:< ConfirmationPage />
+        },
+    
+
+
             {
                 path:'/login',
                 element:<Login/>
@@ -39,9 +73,32 @@ const router = createBrowserRouter([
                 element:<Instructors />
             },
             {
+                path:'/membership',
+                element:<Membership />
+            },
+
+            {
                 path:'/about',
                 element:<AboutUs />
             },
+
+            {
+                path:'/blogs',
+                element:<Blogs />
+            },
+
+            {
+                path:'/blog/:id',
+                element:<BlogDetails />
+            },
+
+
+            {
+                path:'/service',
+                element:<Service />
+            },
+
+
 
             {
                 path:'/contact',
@@ -56,7 +113,14 @@ const router = createBrowserRouter([
             {
                 path:'/program/:id',
                 element:<ProgramDetails />
+            },
+
+
+            {
+                path: '/app',
+                element: <App />
             }
+
         ]
     }
 ])

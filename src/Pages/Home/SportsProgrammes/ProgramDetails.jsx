@@ -130,7 +130,7 @@ const ProgramDetails = () => {
   if (!program) return <div className="fade-in">Loading...</div>;
 
   return (
-    <div className="bg-amber-300 text-gray-800 dark:text-white">
+    <div className="bg-red-200 text-gray-800 dark:text-white">
       <Container>
         <div className="flex flex-col items-center  justify-center min-h-screen p-8">
           <div className="flex flex-col md:flex-row gap-9 items-center justify-center w-full">

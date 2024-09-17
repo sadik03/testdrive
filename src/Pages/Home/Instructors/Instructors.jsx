@@ -15,7 +15,7 @@ const Instructors = () => {
   }, []);
 
   return (
-    <div className="dark:bg-gray-800 pb-10 lg:pb-20  " id="instructors">
+    <div className="dark:bg-gray-800 bg-[#68a9d3] pb-10 lg:pb-20  " id="instructors">
       <Container>
         <SectionHeader heading={"Coaching Staffs"}></SectionHeader>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:gap-10 lg:gap-7 gap-5 ">
